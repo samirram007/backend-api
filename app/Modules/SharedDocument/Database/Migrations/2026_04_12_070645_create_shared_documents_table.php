@@ -10,12 +10,17 @@ return new class extends Migration
     {
         Schema::create('shared_documents', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('code')->unique();
-            $table->string('description')->nullable();
-            $table->string('status')->default('active');
-            $table->string('icon')->nullable();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('document_id');
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
 
+            $table->foreign('document_id')
+                ->references('id')
+                ->on('documents')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

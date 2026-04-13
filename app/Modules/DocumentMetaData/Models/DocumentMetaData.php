@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Modules\DocumentFolder\Models;
+namespace App\Modules\DocumentMetaData\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class DocumentFolder extends Model
+class DocumentMetaData extends Model
 {
     use HasFactory;
 
-    protected $table = 'document_folders';
+    protected $table = 'document_meta_datas';
 
     protected $fillable = [
-        'folder_id',
-        'parent_id',
+        'meta_data',
+        'user_id'
     ];
 
     protected $casts = [

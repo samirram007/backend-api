@@ -5,10 +5,11 @@ namespace App\Modules\Document\Models;
 use App\Modules\User\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Document extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $table = 'documents';
 
@@ -23,10 +24,11 @@ class Document extends Model
         'caption',
         'description',
         'extension',
-        'is_private',
-        'is_deleted',
+        'privacy_level',
         'tags',
-        'cover_image_id'
+        'storage_type',
+        'link',
+        'is_root',
     ];
     protected $casts = [
         'created_at' => 'datetime',
@@ -44,10 +46,4 @@ class Document extends Model
     {
         return $this->belongsToMany(Document::class, 'documents_folders', 'folder_id', 'document_id');
     }
-    public function coverImage()
-    {
-        return $this->belongsTo(Document::class, 'cover_image_id');
-    }
-
-
 }

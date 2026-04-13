@@ -8,13 +8,23 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('document_folders', function (Blueprint $table) {
+        Schema::create('documents_folders', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('code')->unique();
-            $table->string('description')->nullable();
-            $table->string('status')->default('active');
-            $table->string('icon')->nullable();
+            $table->unsignedBigInteger('document_id');
+            $table->unsignedBigInteger('folder_id');
+            $table->unique(['document_id', 'folder_id']);
+            // Define foreign keys
+            $table->foreign('document_id')
+                ->references('id')
+                ->on('documents')
+                ->where('document_type', '<>', 'folder')
+                ->onDelete('cascade');
+
+            $table->foreign('folder_id')
+                ->references('id')
+                ->on('documents')
+                ->where('document_type', '=', 'folder')
+                ->onDelete('cascade');
 
             $table->timestamps();
         });
