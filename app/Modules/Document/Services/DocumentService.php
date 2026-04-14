@@ -2,11 +2,20 @@
 
 namespace App\Modules\Document\Services;
 
+use App\Http\Requests\Document\StoreImageFolderMapperRequest;
 use App\Modules\Document\Contracts\DocumentServiceInterface;
 use App\Modules\Document\Models\Document;
+use App\Modules\Document\Requests\DocumentRequest;
+use App\Modules\Document\Resources\DocumentResource;
+use App\Modules\DocumentFolder\Models\DocumentFolder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\JsonResponse as HttpJsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class DocumentService implements DocumentServiceInterface
 {
@@ -22,7 +31,7 @@ class DocumentService implements DocumentServiceInterface
         return Document::with($this->resource)->findOrFail($id);
     }
 
-    public function store(StoreDocumentRequest $request)
+    public function store(DocumentRequest $request): Document
     {
 
         $validatedData = $request->validatedWithFiles();
@@ -63,7 +72,6 @@ class DocumentService implements DocumentServiceInterface
                     ]);
 
                     $document->save();
-
                 }
             });
 
@@ -71,10 +79,9 @@ class DocumentService implements DocumentServiceInterface
         }
 
         return response()->json(['error' => 'Unauthorized'], 401);
-
     }
 
-    public function update(UpdateDocumentRequest $request, $id)
+    public function update(UpdateDocumentRequest $request, $id): Document
     {
         $document = Document::find($id);
         $validatedData = $request->validated();
@@ -84,7 +91,7 @@ class DocumentService implements DocumentServiceInterface
         return new DocumentResource($document);
     }
 
-    public function delete($id)
+    public function delete($id): HttpJsonResponse
     {
         $document = Document::find($id);
         if (!$document) {
@@ -158,7 +165,7 @@ class DocumentService implements DocumentServiceInterface
     }
     public function imageToFolder(StoreImageFolderMapperRequest $request)
     {
-        $documentFolder = new DocumentsFolder();
+        $documentFolder = new DocumentFolder();
         $documentFolder->document_id = $request->document_id;
         $documentFolder->folder_id = $request->folder_id;
         $documentFolder->save();

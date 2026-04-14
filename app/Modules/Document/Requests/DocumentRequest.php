@@ -2,7 +2,10 @@
 
 namespace App\Modules\Document\Requests;
 
+use App\Enums\DocumentPrivacyLevel;
+use App\Enums\DocumentStorageType;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class DocumentRequest extends FormRequest
 {
@@ -14,18 +17,21 @@ class DocumentRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'name' => ['required', 'string', 'max:255','unique:documents,name'],
-            'code' => ['sometimes','required', 'string', 'max:255','unique:documents,code'],
-            'description' => ['sometimes','required', 'string', 'max:255'],
-            'status' => ['sometimes','required', 'string', 'max:255'],
+            'files' => ['required', 'array'],
+            'files.*' => ['file'],
+            'caption' => ['nullable', 'string'],
+            'description' => ['nullable', 'string'],
+            'storage_type' => ['nullable', Rule::in(DocumentStorageType::getValues())],
+            'privacy_level' => ['nullable', Rule::in(DocumentPrivacyLevel::getValues())],
+            'description' => ['sometimes', 'required', 'string', 'max:255'],
+            'tags' => ['nullable', 'string'],
         ];
 
         // For update requests, make validation more flexible
         if ($this->isMethod('PUT') || $this->isMethod('PATCH')) {
-            $id=$this->route('document');
+            $id = $this->route('document');
             $rules['name'] = ['sometimes', 'required', 'string', 'max:255', 'unique:documents,name,' . $id,];
             $rules['code'] = ['sometimes', 'required', 'string', 'max:255', 'unique:documents,code,' . $id,];
-
         }
 
         return $rules;

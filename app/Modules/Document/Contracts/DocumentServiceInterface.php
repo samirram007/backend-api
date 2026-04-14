@@ -4,6 +4,7 @@ namespace App\Modules\Document\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
 use App\Modules\Document\Models\Document;
+use Illuminate\Http\JsonResponse;
 
 interface DocumentServiceInterface
 {
@@ -11,5 +12,5 @@ interface DocumentServiceInterface
     public function getById(int $id): ?Document;
     public function store(array $data): Document;
     public function update(array $data, int $id): Document;
-    public function delete(int $id): bool;
+    public function delete(int $id): JsonResponse;
 }
