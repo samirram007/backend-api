@@ -20,7 +20,7 @@ return new class extends Migration {
             $table->string('extension')->nullable();
             $table->string('mime_type')->nullable();
             $table->string('size')->nullable();
-            $table->enum('privacy_level', DocumentPrivacyLevel::getValues())->default(DocumentPrivacyLevel::PUBLIC);
+            // $table->enum('privacy_level', DocumentPrivacyLevel::getValues())->default(DocumentPrivacyLevel::PUBLIC);
             $table->boolean('is_root')->default(false);
             $table->text('tags')->nullable();
 
