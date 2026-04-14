@@ -1,20 +1,23 @@
 <?php
 
-namespace App\Modules\State\Providers;
+namespace App\Modules\Maintenance\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\State\Contracts\StateServiceInterface;
-use App\Modules\State\Services\StateService;
+use App\Modules\Maintenance\Contracts\MaintenanceServiceInterface;
+use App\Modules\Maintenance\Services\MaintenanceService;
 
-class StateServiceProvider extends ServiceProvider
+class MaintenanceServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->bind(StateServiceInterface::class, StateService::class);
-        $this->app->singleton('state', function ($app) {
-            return $app->make(StateServiceInterface::class);
+        $this->app->bind(MaintenanceServiceInterface::class, MaintenanceService::class);
+
+        $this->app->singleton('maintenances', function ($app) {
+            return $app->make(MaintenanceServiceInterface::class);
         });
+
+
     }
 
     public function boot(): void
