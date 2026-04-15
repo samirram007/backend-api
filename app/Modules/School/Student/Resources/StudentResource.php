@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Modules\Student\Resources;
+namespace App\Modules\School\Student\Resources;
 
 use Illuminate\Http\Request;
 
 use App\Http\Resources\SuccessResource;
+
 class StudentResource extends SuccessResource
 {
     public function toArray(Request $request): array

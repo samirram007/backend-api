@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\Student\Services;
+namespace App\Modules\School\Student\Services;
 
-use App\Modules\Student\Contracts\StudentServiceInterface;
-use App\Modules\Student\Models\Student;
+use App\Modules\School\Student\Contracts\StudentServiceInterface;
+use App\Modules\School\Student\Models\Student;
 use Illuminate\Database\Eloquent\Collection;
 
 class StudentService implements StudentServiceInterface
 {
-    protected $resource=[];
+    protected $resource = [];
 
     public function getAll(): Collection
     {

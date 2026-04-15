@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\DocumentFolder\Database\Seeders;
+namespace App\Modules\Document\DocumentFolder\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Modules\DocumentFolder\Models\DocumentFolder;

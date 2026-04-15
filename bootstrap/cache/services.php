@@ -35,6 +35,8 @@
     31 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',
     32 => 'App\\Providers\\AppServiceProvider',
     33 => 'App\\Providers\\BaseModuleServiceLoader',
+    34 => 'App\\Providers\\DocumentModuleServiceLoader',
+    35 => 'App\\Providers\\HospitalModuleServiceLoader',
   ),
   'eager' => 
   array (
@@ -57,6 +59,8 @@
     16 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',
     17 => 'App\\Providers\\AppServiceProvider',
     18 => 'App\\Providers\\BaseModuleServiceLoader',
+    19 => 'App\\Providers\\DocumentModuleServiceLoader',
+    20 => 'App\\Providers\\HospitalModuleServiceLoader',
   ),
   'deferred' => 
   array (

@@ -538,7 +538,7 @@ class {$name}Seeder extends Seeder
     ): void {
         $content = "<?php
 
-use App\Modules\\{$group}{$name}\Providers;
+namespace App\Modules\\{$group}{$name}\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;

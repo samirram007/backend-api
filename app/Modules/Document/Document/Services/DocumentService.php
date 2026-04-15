@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Document\Services;
+namespace App\Modules\Document\Document\Services;
 
-use App\Modules\Document\Contracts\DocumentServiceInterface;
-use App\Modules\Document\Models\Document;
+use App\Modules\Document\Document\Contracts\DocumentServiceInterface;
+use App\Modules\Document\Document\Models\Document;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -63,7 +63,6 @@ class DocumentService implements DocumentServiceInterface
                     ]);
 
                     $document->save();
-
                 }
             });
 
@@ -71,7 +70,6 @@ class DocumentService implements DocumentServiceInterface
         }
 
         return response()->json(['error' => 'Unauthorized'], 401);
-
     }
 
     public function update(UpdateDocumentRequest $request, $id)

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Document\Resources;
+namespace App\Modules\Document\Document\Resources;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\SuccessCollection;
@@ -8,7 +8,7 @@ use App\Http\Resources\SuccessCollection;
 class DocumentCollection extends SuccessCollection
 {
 
-         /**
+    /**
      * Transform the resource collection into an array.
      *
      * @return array<int|string, mixed>

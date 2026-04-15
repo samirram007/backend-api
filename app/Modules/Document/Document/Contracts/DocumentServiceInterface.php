@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Document\Contracts;
+namespace App\Modules\Document\Document\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\Document\Models\Document;
+use App\Modules\Document\Document\Models\Document;
 
 interface DocumentServiceInterface
 {

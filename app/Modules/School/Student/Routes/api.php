@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Modules\Student\Controllers\Api\StudentController;
+use App\Modules\School\Student\Controllers\Api\StudentController;
 
 Route::apiResource('students', StudentController::class)->middleware(['jwt.cookies']);

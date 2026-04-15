@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\Student\Tests\Feature;
+namespace App\Modules\School\Student\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\Student\Models\Student;
+use App\Modules\School\Student\Models\Student;
 
 class StudentTest extends TestCase
 {
@@ -14,12 +14,12 @@ class StudentTest extends TestCase
     {
         $response = $this->getJson('/api/students');
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_create_Student(): void
@@ -28,12 +28,12 @@ class StudentTest extends TestCase
 
         $response = $this->postJson('/api/students', $data);
         $response->assertStatus(201)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('students', $data);
     }
@@ -44,17 +44,17 @@ class StudentTest extends TestCase
 
         $response = $this->getJson('/api/students/' . $Student->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data' => [
-                         'id',
-                         'name',
-                         'created_at',
-                         'updated_at'
-                     ],
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data' => [
+                    'id',
+                    'name',
+                    'created_at',
+                    'updated_at'
+                ],
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_update_Student(): void
@@ -64,12 +64,12 @@ class StudentTest extends TestCase
 
         $response = $this->putJson('/api/students/' . $Student->id, $data);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('students', $data);
     }
@@ -80,11 +80,11 @@ class StudentTest extends TestCase
 
         $response = $this->deleteJson('/api/students/' . $Student->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseMissing('students', ['id' => $Student->id]);
     }
@@ -93,6 +93,6 @@ class StudentTest extends TestCase
     {
         $response = $this->postJson('/api/students', []);
         $response->assertStatus(422)
-                 ->assertJsonValidationErrors(['name']);
+            ->assertJsonValidationErrors(['name']);
     }
 }
