@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Role\Contracts;
+namespace App\Modules\Base\Role\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\Role\Models\Role;
+use App\Modules\Base\Role\Models\Role;
 
 interface RoleServiceInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\User\Database\Seeders;
+namespace App\Modules\Base\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Modules\User\Models\User;
+use App\Modules\Base\User\Models\User;
 
 class UserSeeder extends Seeder
 {

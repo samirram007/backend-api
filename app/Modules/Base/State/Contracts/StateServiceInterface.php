@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\State\Contracts;
+namespace App\Modules\Base\State\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\State\Models\State;
+use App\Modules\Base\State\Models\State;
 
 interface StateServiceInterface
 {

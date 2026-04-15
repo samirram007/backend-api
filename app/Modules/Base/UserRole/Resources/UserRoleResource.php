@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\UserRole\Resources;
+namespace App\Modules\Base\UserRole\Resources;
 
-use App\Modules\Role\Resources\RoleResource;
-use App\Modules\User\Resources\UserResource;
+use App\Modules\Base\Role\Resources\RoleResource;
+use App\Modules\Base\User\Resources\UserResource;
 use Illuminate\Http\Request;
 
 use App\Http\Resources\SuccessResource;

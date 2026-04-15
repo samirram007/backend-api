@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\Currency\Controllers\Api;
+namespace App\Modules\Base\Currency\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Currency\Contracts\CurrencyServiceInterface;
-use App\Modules\Currency\Resources\CurrencyResource;
-use App\Modules\Currency\Resources\CurrencyCollection;
-use App\Modules\Currency\Requests\CurrencyRequest;
+use App\Modules\Base\Currency\Contracts\CurrencyServiceInterface;
+use App\Modules\Base\Currency\Resources\CurrencyResource;
+use App\Modules\Base\Currency\Resources\CurrencyCollection;
+use App\Modules\Base\Currency\Requests\CurrencyRequest;
 use App\Http\Resources\SuccessResource;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\JsonResponse;

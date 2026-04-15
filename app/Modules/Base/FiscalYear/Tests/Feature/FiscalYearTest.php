@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\FiscalYear\Tests\Feature;
+namespace App\Modules\Base\FiscalYear\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\FiscalYear\Models\FiscalYear;
+use App\Modules\Base\FiscalYear\Models\FiscalYear;
 
 class FiscalYearTest extends TestCase
 {

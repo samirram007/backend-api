@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\CompanyType\Controllers\Api;
+namespace App\Modules\Base\CompanyType\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Modules\CompanyType\Contracts\CompanyTypeServiceInterface;
-use App\Modules\CompanyType\Resources\CompanyTypeResource;
-use App\Modules\CompanyType\Resources\CompanyTypeCollection;
-use App\Modules\CompanyType\Requests\CompanyTypeRequest;
+use App\Modules\Base\CompanyType\Contracts\CompanyTypeServiceInterface;
+use App\Modules\Base\CompanyType\Resources\CompanyTypeResource;
+use App\Modules\Base\CompanyType\Resources\CompanyTypeCollection;
+use App\Modules\Base\CompanyType\Requests\CompanyTypeRequest;
 use App\Http\Resources\SuccessResource;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\JsonResponse;

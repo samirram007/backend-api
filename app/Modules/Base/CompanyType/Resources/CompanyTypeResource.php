@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\CompanyType\Resources;
+namespace App\Modules\Base\CompanyType\Resources;
 
 use App\Http\Resources\SuccessResource;
-use App\Modules\Company\Resources\CompanyCollection;
+use App\Modules\Base\Company\Resources\CompanyCollection;
 use Illuminate\Http\Request;
 
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\Company\Controllers\Api;
+namespace App\Modules\Base\Company\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 
-use App\Modules\Company\Facades\CompanyFacade;
-use App\Modules\Company\Resources\CompanyResource;
-use App\Modules\Company\Resources\CompanyCollection;
-use App\Modules\Company\Requests\CompanyRequest;
+use App\Modules\Base\Company\Facades\CompanyFacade;
+use App\Modules\Base\Company\Resources\CompanyResource;
+use App\Modules\Base\Company\Resources\CompanyCollection;
+use App\Modules\Base\Company\Requests\CompanyRequest;
 use App\Http\Resources\SuccessResource;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\JsonResponse;

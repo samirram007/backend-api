@@ -1,6 +1,7 @@
 <?php
 
-use App\Modules\User\Models\User;
+use App\Modules\Base\User\Models\User;
+
 
 
 

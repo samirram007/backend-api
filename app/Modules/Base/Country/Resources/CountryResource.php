@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Country\Resources;
+namespace App\Modules\Base\Country\Resources;
 
 use App\Http\Resources\SuccessResource;
-use App\Modules\State\Resources\StateCollection;
+use App\Modules\Base\State\Resources\StateCollection;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

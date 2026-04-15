@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\UserFiscalYear\Models;
+namespace App\Modules\Base\UserFiscalYear\Models;
 
-use App\Modules\FiscalYear\Models\FiscalYear;
-use App\Modules\User\Models\User;
+use App\Modules\Base\FiscalYear\Models\FiscalYear;
+use App\Modules\Base\User\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

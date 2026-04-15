@@ -3,7 +3,7 @@
 namespace App\Modules\Base\Company\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\Company\Models\Company;
+use App\Modules\Base\Company\Models\Company;
 
 interface CompanyServiceInterface
 {

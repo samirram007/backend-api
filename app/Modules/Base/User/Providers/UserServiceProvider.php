@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\User\Providers;
+namespace App\Modules\Base\User\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\User\Contracts\UserServiceInterface;
-use App\Modules\User\Services\UserService;
+use App\Modules\Base\User\Contracts\UserServiceInterface;
+use App\Modules\Base\User\Services\UserService;
 
 class UserServiceProvider extends ServiceProvider
 {

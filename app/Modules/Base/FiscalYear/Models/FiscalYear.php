@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\FiscalYear\Models;
+namespace App\Modules\Base\FiscalYear\Models;
 
 use App\Enums\ActiveInactive;
-use App\Modules\Company\Models\Company;
+use App\Modules\Base\Company\Models\Company;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

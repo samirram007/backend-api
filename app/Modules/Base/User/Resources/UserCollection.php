@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\User\Resources;
+namespace App\Modules\Base\User\Resources;
 
 use App\Http\Resources\SuccessCollection;
 

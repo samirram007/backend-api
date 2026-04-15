@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\UserRole\Contracts;
+namespace App\Modules\Base\UserRole\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\UserRole\Models\UserRole;
+use App\Modules\Base\UserRole\Models\UserRole;
 
 interface UserRoleServiceInterface
 {

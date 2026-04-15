@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\FiscalYear\Requests;
+namespace App\Modules\Base\FiscalYear\Requests;
 
 use App\Enums\ActiveInactive;
 use Illuminate\Foundation\Http\FormRequest;

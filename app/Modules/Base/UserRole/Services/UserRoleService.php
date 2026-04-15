@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\UserRole\Services;
+namespace App\Modules\Base\UserRole\Services;
 
-use App\Modules\UserRole\Contracts\UserRoleServiceInterface;
-use App\Modules\UserRole\Models\UserRole;
+use App\Modules\Base\UserRole\Contracts\UserRoleServiceInterface;
+use App\Modules\Base\UserRole\Models\UserRole;
 use Illuminate\Database\Eloquent\Collection;
 use Log;
 

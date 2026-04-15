@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\CompanyType\Providers;
+namespace App\Modules\Base\CompanyType\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\CompanyType\Contracts\CompanyTypeServiceInterface;
-use App\Modules\CompanyType\Services\CompanyTypeService;
+use App\Modules\Base\CompanyType\Contracts\CompanyTypeServiceInterface;
+use App\Modules\Base\CompanyType\Services\CompanyTypeService;
 
 class CompanyTypeServiceProvider extends ServiceProvider
 {

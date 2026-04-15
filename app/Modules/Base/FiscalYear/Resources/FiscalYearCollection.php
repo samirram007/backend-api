@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\FiscalYear\Resources;
+namespace App\Modules\Base\FiscalYear\Resources;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\SuccessCollection;

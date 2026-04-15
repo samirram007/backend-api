@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\User\Models;
+namespace App\Modules\Base\User\Models;
 
-use App\Modules\Role\Models\Role;
-use App\Modules\UserFiscalYear\Models\UserFiscalYear;
+use App\Modules\Base\Role\Models\Role;
+use App\Modules\Base\UserFiscalYear\Models\UserFiscalYear;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 
