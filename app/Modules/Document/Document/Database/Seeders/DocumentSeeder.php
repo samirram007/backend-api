@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Document\Database\Seeders;
+namespace App\Modules\Document\Document\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Modules\Document\Models\Document;
+use App\Modules\Document\Document\Models\Document;
 
 class DocumentSeeder extends Seeder
 {

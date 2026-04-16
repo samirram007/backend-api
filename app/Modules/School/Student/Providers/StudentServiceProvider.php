@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\Student\Providers;
+namespace App\Modules\School\Student\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\Student\Contracts\StudentServiceInterface;
-use App\Modules\Student\Services\StudentService;
+use App\Modules\School\Student\Contracts\StudentServiceInterface;
+use App\Modules\School\Student\Services\StudentService;
 
 class StudentServiceProvider extends ServiceProvider
 {
@@ -29,6 +29,7 @@ class StudentServiceProvider extends ServiceProvider
 
     private function loadMigrations(): void
     {
+        echo "Loading Student Migrations from: " . __DIR__ . '/../Database/Migrations' . "\n";
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 }

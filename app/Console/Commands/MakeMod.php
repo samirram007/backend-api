@@ -514,7 +514,7 @@ return new class extends Migration
 namespace App\Modules\\{$group}{$name}\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Modules\\{$name}\Models\\{$name};
+use App\Modules\\{$group}{$name}\Models\\{$name};
 
 class {$name}Seeder extends Seeder
 {
@@ -537,8 +537,7 @@ class {$name}Seeder extends Seeder
         string $group
     ): void {
         $content = "<?php
-
-use App\Modules\\{$group}{$name}\Providers;
+namespace App\Modules\\{$group}{$name}\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;

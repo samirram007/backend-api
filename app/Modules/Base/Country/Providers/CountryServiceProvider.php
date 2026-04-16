@@ -12,6 +12,9 @@ class CountryServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(CountryServiceInterface::class, CountryService::class);
+        $this->app->singleton('countries', function ($app) {
+            return $app->make(CountryServiceInterface::class);
+        });
     }
 
     public function boot(): void

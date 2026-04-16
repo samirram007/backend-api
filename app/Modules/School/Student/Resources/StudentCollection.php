@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Student\Resources;
+namespace App\Modules\School\Student\Resources;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\SuccessCollection;
@@ -8,7 +8,7 @@ use App\Http\Resources\SuccessCollection;
 class StudentCollection extends SuccessCollection
 {
 
-         /**
+    /**
      * Transform the resource collection into an array.
      *
      * @return array<int|string, mixed>

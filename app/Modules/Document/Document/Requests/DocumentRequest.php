@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Document\Requests;
+namespace App\Modules\Document\Document\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -14,15 +14,15 @@ class DocumentRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'name' => ['required', 'string', 'max:255','unique:documents,name'],
-            'code' => ['sometimes','required', 'string', 'max:255','unique:documents,code'],
-            'description' => ['sometimes','required', 'string', 'max:255'],
-            'status' => ['sometimes','required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255', 'unique:documents,name'],
+            'code' => ['sometimes', 'required', 'string', 'max:255', 'unique:documents,code'],
+            'description' => ['sometimes', 'required', 'string', 'max:255'],
+            'status' => ['sometimes', 'required', 'string', 'max:255'],
         ];
 
         // For update requests, make validation more flexible
         if ($this->isMethod('PUT') || $this->isMethod('PATCH')) {
-            $id=$this->route('document');
+            $id = $this->route('document');
             $rules['name'] = ['sometimes', 'required', 'string', 'max:255', 'unique:documents,name,' . $id,];
             $rules['code'] = ['sometimes', 'required', 'string', 'max:255', 'unique:documents,code,' . $id,];
 

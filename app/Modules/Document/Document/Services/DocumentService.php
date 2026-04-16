@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Modules\Document\Services;
+namespace App\Modules\Document\Document\Services;
 
-use App\Modules\Document\Contracts\DocumentServiceInterface;
-use App\Modules\Document\Models\Document;
+use App\Modules\Document\Document\Contracts\DocumentServiceInterface;
+use App\Modules\Document\Document\Models\Document;
+use App\Modules\Document\Document\Requests\DocumentRequest;
+use App\Modules\Document\Document\Resources\DocumentResource;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -22,7 +24,7 @@ class DocumentService implements DocumentServiceInterface
         return Document::with($this->resource)->findOrFail($id);
     }
 
-    public function store(StoreDocumentRequest $request)
+    public function store(DocumentRequest $request)
     {
 
         $validatedData = $request->validatedWithFiles();
@@ -74,7 +76,7 @@ class DocumentService implements DocumentServiceInterface
 
     }
 
-    public function update(UpdateDocumentRequest $request, $id)
+    public function update(DocumentRequest $request, $id)
     {
         $document = Document::find($id);
         $validatedData = $request->validated();

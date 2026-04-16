@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Document;
 
-use App\Models\DocumentsFolder;
+use App\Models\Document\DocumentsFolder;
 use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 use App\Rules\UniqueDocumentFolderCombination;
@@ -25,15 +25,15 @@ class StoreImageFolderMapperRequest extends FormRequest
     public function rules()
     {
 
-    $uniqueRule = Rule::unique('documents_folders')->where(function ($query) {
-        // Use the values from the request to check for uniqueness
-        return $query->where('folder_id', $this->input('folder_id'))
-                     ->where('document_id', $this->input('document_id'));
-    });
+        $uniqueRule = Rule::unique('documents_folders')->where(function ($query) {
+            // Use the values from the request to check for uniqueness
+            return $query->where('folder_id', $this->input('folder_id'))
+                ->where('document_id', $this->input('document_id'));
+        });
 
         return [
-           "folder_id" => ["required", "integer", "exists:documents,id",$uniqueRule],
-           "document_id" => ["required", "integer", "exists:documents,id", $uniqueRule],
+            "folder_id" => ["required", "integer", "exists:documents,id", $uniqueRule],
+            "document_id" => ["required", "integer", "exists:documents,id", $uniqueRule],
         ];
     }
 }

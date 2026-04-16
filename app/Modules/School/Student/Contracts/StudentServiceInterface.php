@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Student\Contracts;
+namespace App\Modules\School\Student\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\Student\Models\Student;
+use App\Modules\School\Student\Models\Student;
 
 interface StudentServiceInterface
 {

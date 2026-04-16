@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\Document\Tests\Feature;
+namespace App\Modules\Document\Document\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\Document\Models\Document;
+use App\Modules\Document\Document\Models\Document;
 
 class DocumentTest extends TestCase
 {
@@ -14,12 +14,12 @@ class DocumentTest extends TestCase
     {
         $response = $this->getJson('/api/documents');
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_create_Document(): void
@@ -28,12 +28,12 @@ class DocumentTest extends TestCase
 
         $response = $this->postJson('/api/documents', $data);
         $response->assertStatus(201)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('documents', $data);
     }
@@ -44,17 +44,17 @@ class DocumentTest extends TestCase
 
         $response = $this->getJson('/api/documents/' . $Document->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data' => [
-                         'id',
-                         'name',
-                         'created_at',
-                         'updated_at'
-                     ],
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data' => [
+                    'id',
+                    'name',
+                    'created_at',
+                    'updated_at'
+                ],
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_update_Document(): void
@@ -64,12 +64,12 @@ class DocumentTest extends TestCase
 
         $response = $this->putJson('/api/documents/' . $Document->id, $data);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('documents', $data);
     }
@@ -80,11 +80,11 @@ class DocumentTest extends TestCase
 
         $response = $this->deleteJson('/api/documents/' . $Document->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseMissing('documents', ['id' => $Document->id]);
     }
@@ -93,6 +93,6 @@ class DocumentTest extends TestCase
     {
         $response = $this->postJson('/api/documents', []);
         $response->assertStatus(422)
-                 ->assertJsonValidationErrors(['name']);
+            ->assertJsonValidationErrors(['name']);
     }
 }
