@@ -11,6 +11,7 @@ class HospitalModuleServiceLoader extends ServiceProvider
     {
         $modulePath = app_path('Modules/Hospital');
         $directories = glob("{$modulePath}/*", GLOB_ONLYDIR);
+        dd("HospitalModuleServiceLoader: Found module directories: " . implode(', ', $directories));
 
         foreach ($directories as $modulePath) {
             $module = basename($modulePath);

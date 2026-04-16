@@ -11,12 +11,16 @@ use App\Providers\PathologyModuleServiceLoader;
 use App\Providers\HotelModuleServiceLoader;
 use App\Providers\RestaurantModuleServiceLoader;
 
+dd("Current APP_MODULE: " . env('APP_MODULE'));
+
 $providers = [
     AppServiceProvider::class,
     BaseModuleServiceLoader::class,
     DocumentModuleServiceLoader::class,
     MaintenanceModuleServiceLoader::class,
 ];
+
+
 
 switch (env('APP_MODULE')) {
     case 'Aipt':
@@ -26,6 +30,7 @@ switch (env('APP_MODULE')) {
         $providers[] = SchoolModuleServiceLoader::class;
         break;
     case 'Hospital':
+        dd("Registering HospitalModuleServiceLoader");
         $providers[] = HospitalModuleServiceLoader::class;
         break;
     case 'Pathology':
