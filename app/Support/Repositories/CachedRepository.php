@@ -2,19 +2,71 @@
 
 namespace App\Support\Repositories;
 
+
+use App\Support\Contracts\BaseRepositoryInterface;
+use App\Support\Contracts\CachedRepositoryInterface;
+
 use Illuminate\Support\Facades\Cache;
 
-class CachedRepository
+class CachedRepository implements CachedRepositoryInterface
 {
-    protected BaseRepository $repo;
-    protected string $prefix;
-    protected int $ttl = 600;
 
-    public function __construct(BaseRepository $repo)
+    protected string $prefix;
+    protected int $ttl; // Default to 1 hour
+
+    public function __construct(protected BaseRepositoryInterface $repo)
     {
-        $this->repo = $repo;
+        $this->ttl = env('CACHE_TTL', 3600);
         $this->prefix = strtolower(class_basename($repo));
     }
+
+    // ========================
+    // Interface Required Methods
+    // ========================
+
+    public function allCached()
+    {
+        return $this->all();
+    }
+
+    public function findCached($id)
+    {
+        return $this->find($id);
+    }
+
+    public function clearAllCache()
+    {
+        $this->clear();
+    }
+
+    public function clearCacheById($id)
+    {
+        $this->clear();
+    }
+
+    public function create(array $data)
+    {
+        $result = $this->repo->create($data);
+        $this->clear();
+        return $result;
+    }
+
+    public function update(int $id, array $data)
+    {
+        $result = $this->repo->update($id, $data);
+        $this->clear();
+        return $result;
+    }
+
+    public function delete(int $id)
+    {
+        $result = $this->repo->delete($id);
+        $this->clear();
+        return $result;
+    }
+
+
+
 
     protected function version(): int
     {
