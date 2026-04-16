@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\SharedDocument\Database\Seeders;
+namespace App\Modules\Document\SharedDocument\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Modules\SharedDocument\Models\SharedDocument;
+use App\Modules\Document\SharedDocument\Models\SharedDocument;
 
 class SharedDocumentSeeder extends Seeder
 {

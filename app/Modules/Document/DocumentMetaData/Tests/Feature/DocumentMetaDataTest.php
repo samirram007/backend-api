@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Tests\Feature;
+namespace App\Modules\Document\DocumentMetaData\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\DocumentMetaData\Models\DocumentMetaData;
+use App\Modules\Document\DocumentMetaData\Models\DocumentMetaData;
 
 class DocumentMetaDataTest extends TestCase
 {
@@ -14,12 +14,12 @@ class DocumentMetaDataTest extends TestCase
     {
         $response = $this->getJson('/api/document_meta_datas');
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_create_DocumentMetaData(): void
@@ -28,12 +28,12 @@ class DocumentMetaDataTest extends TestCase
 
         $response = $this->postJson('/api/document_meta_datas', $data);
         $response->assertStatus(201)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('document_meta_datas', $data);
     }
@@ -44,17 +44,17 @@ class DocumentMetaDataTest extends TestCase
 
         $response = $this->getJson('/api/document_meta_datas/' . $DocumentMetaData->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data' => [
-                         'id',
-                         'name',
-                         'created_at',
-                         'updated_at'
-                     ],
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data' => [
+                    'id',
+                    'name',
+                    'created_at',
+                    'updated_at'
+                ],
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_update_DocumentMetaData(): void
@@ -64,12 +64,12 @@ class DocumentMetaDataTest extends TestCase
 
         $response = $this->putJson('/api/document_meta_datas/' . $DocumentMetaData->id, $data);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('document_meta_datas', $data);
     }
@@ -80,11 +80,11 @@ class DocumentMetaDataTest extends TestCase
 
         $response = $this->deleteJson('/api/document_meta_datas/' . $DocumentMetaData->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseMissing('document_meta_datas', ['id' => $DocumentMetaData->id]);
     }
@@ -93,6 +93,6 @@ class DocumentMetaDataTest extends TestCase
     {
         $response = $this->postJson('/api/document_meta_datas', []);
         $response->assertStatus(422)
-                 ->assertJsonValidationErrors(['name']);
+            ->assertJsonValidationErrors(['name']);
     }
 }

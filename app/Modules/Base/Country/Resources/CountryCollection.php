@@ -3,14 +3,18 @@
 namespace App\Modules\Base\Country\Resources;
 
 use App\Http\Resources\SuccessCollection;
+use Illuminate\Http\Request;
+
 
 class CountryCollection extends SuccessCollection
 {
-    public function __construct($resource, string $message = null)
+    /**
+     * Transform the resource collection into an array.
+     *
+     * @return array<int|string, mixed>
+     */
+    public function toArray(Request $request): array
     {
-        parent::__construct(
-            CountryResource::collection($resource),
-            $message ?? 'Country records fetched successfully'
-        );
+        return parent::toArray($request);
     }
 }

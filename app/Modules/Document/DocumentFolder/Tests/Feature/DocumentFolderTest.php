@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\DocumentFolder\Tests\Feature;
+namespace App\Modules\Document\DocumentFolder\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\DocumentFolder\Models\DocumentFolder;
+use App\Modules\Document\DocumentFolder\Models\DocumentFolder;
 
 class DocumentFolderTest extends TestCase
 {
@@ -14,12 +14,12 @@ class DocumentFolderTest extends TestCase
     {
         $response = $this->getJson('/api/document_folders');
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_create_DocumentFolder(): void
@@ -28,12 +28,12 @@ class DocumentFolderTest extends TestCase
 
         $response = $this->postJson('/api/document_folders', $data);
         $response->assertStatus(201)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('document_folders', $data);
     }
@@ -44,17 +44,17 @@ class DocumentFolderTest extends TestCase
 
         $response = $this->getJson('/api/document_folders/' . $DocumentFolder->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data' => [
-                         'id',
-                         'name',
-                         'created_at',
-                         'updated_at'
-                     ],
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data' => [
+                    'id',
+                    'name',
+                    'created_at',
+                    'updated_at'
+                ],
+                'status',
+                'code',
+                'message'
+            ]);
     }
 
     public function test_can_update_DocumentFolder(): void
@@ -64,12 +64,12 @@ class DocumentFolderTest extends TestCase
 
         $response = $this->putJson('/api/document_folders/' . $DocumentFolder->id, $data);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'data',
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'data',
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseHas('document_folders', $data);
     }
@@ -80,11 +80,11 @@ class DocumentFolderTest extends TestCase
 
         $response = $this->deleteJson('/api/document_folders/' . $DocumentFolder->id);
         $response->assertStatus(200)
-                 ->assertJsonStructure([
-                     'status',
-                     'code',
-                     'message'
-                 ]);
+            ->assertJsonStructure([
+                'status',
+                'code',
+                'message'
+            ]);
 
         $this->assertDatabaseMissing('document_folders', ['id' => $DocumentFolder->id]);
     }
@@ -93,6 +93,6 @@ class DocumentFolderTest extends TestCase
     {
         $response = $this->postJson('/api/document_folders', []);
         $response->assertStatus(422)
-                 ->assertJsonValidationErrors(['name']);
+            ->assertJsonValidationErrors(['name']);
     }
 }

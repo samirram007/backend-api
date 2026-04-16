@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Database\Seeders;
+namespace App\Modules\Document\DocumentMetaData\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Modules\DocumentMetaData\Models\DocumentMetaData;
+use App\Modules\Document\DocumentMetaData\Models\DocumentMetaData;
 
 class DocumentMetaDataSeeder extends Seeder
 {

@@ -2,6 +2,8 @@
 
 namespace App\Modules\Base\Country\Providers;
 
+use App\Modules\Base\Country\Contracts\CountryRepositoryInterface;
+use App\Modules\Base\Country\Repositories\CountryRepository;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 use App\Modules\Base\Country\Contracts\CountryServiceInterface;
@@ -11,10 +13,9 @@ class CountryServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->bind(CountryServiceInterface::class, CountryService::class);
-        $this->app->singleton('countries', function ($app) {
-            return $app->make(CountryServiceInterface::class);
-        });
+        $this->app->bind(CountryRepositoryInterface::class, CountryRepository::class);
+        $this->app->singleton(CountryServiceInterface::class, CountryService::class);
+
     }
 
     public function boot(): void

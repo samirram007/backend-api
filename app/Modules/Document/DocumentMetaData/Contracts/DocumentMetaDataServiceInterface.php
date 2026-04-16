@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Contracts;
+namespace App\Modules\Document\DocumentMetaData\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\DocumentMetaData\Models\DocumentMetaData;
+use App\Modules\Document\DocumentMetaData\Models\DocumentMetaData;
 
 interface DocumentMetaDataServiceInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\DocumentFolder\Services;
+namespace App\Modules\Document\DocumentFolder\Services;
 
-use App\Modules\DocumentFolder\Contracts\DocumentFolderServiceInterface;
-use App\Modules\DocumentFolder\Models\DocumentFolder;
+use App\Modules\Document\DocumentFolder\Contracts\DocumentFolderServiceInterface;
+use App\Modules\Document\DocumentFolder\Models\DocumentFolder;
 use Illuminate\Database\Eloquent\Collection;
 
 class DocumentFolderService implements DocumentFolderServiceInterface
 {
-    protected $resource=[];
+    protected $resource = [];
 
     public function getAll(): Collection
     {

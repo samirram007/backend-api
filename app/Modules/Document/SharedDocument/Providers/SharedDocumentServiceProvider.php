@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\SharedDocument\Providers;
+namespace App\Modules\Document\SharedDocument\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\SharedDocument\Contracts\SharedDocumentServiceInterface;
-use App\Modules\SharedDocument\Services\SharedDocumentService;
+use App\Modules\Document\SharedDocument\Contracts\SharedDocumentServiceInterface;
+use App\Modules\Document\SharedDocument\Services\SharedDocumentService;
 
 class SharedDocumentServiceProvider extends ServiceProvider
 {

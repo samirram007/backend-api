@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Resources;
+namespace App\Modules\Document\DocumentMetaData\Resources;
 
 use Illuminate\Http\Request;
 

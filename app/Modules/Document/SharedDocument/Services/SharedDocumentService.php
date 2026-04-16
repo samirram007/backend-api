@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\SharedDocument\Services;
+namespace App\Modules\Document\SharedDocument\Services;
 
-use App\Modules\SharedDocument\Contracts\SharedDocumentServiceInterface;
-use App\Modules\SharedDocument\Models\SharedDocument;
+use App\Modules\Document\SharedDocument\Contracts\SharedDocumentServiceInterface;
+use App\Modules\Document\SharedDocument\Models\SharedDocument;
 use Illuminate\Database\Eloquent\Collection;
 
 class SharedDocumentService implements SharedDocumentServiceInterface
 {
-    protected $resource=[];
+    protected $resource = [];
 
     public function getAll(): Collection
     {
