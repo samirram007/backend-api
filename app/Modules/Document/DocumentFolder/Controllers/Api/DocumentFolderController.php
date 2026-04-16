@@ -16,7 +16,9 @@ class DocumentFolderController extends Controller
 {
     use ApiResponseTrait;
 
-    public function __construct(protected DocumentFolderServiceInterface $service) {}
+    public function __construct(protected DocumentFolderServiceInterface $service)
+    {
+    }
 
     public function index(): SuccessCollection
     {
@@ -27,19 +29,27 @@ class DocumentFolderController extends Controller
     public function show(int $id): SuccessResource
     {
         $data = $this->service->getById($id);
-        return  new DocumentFolderResource($data);
+        return new DocumentFolderResource($data);
     }
 
     public function store(DocumentFolderRequest $request): SuccessResource
     {
         $data = $this->service->store($request->validated());
+<<<<<<< HEAD
         return  new DocumentFolderResource($data, $messages = 'DocumentFolder created successfully');
+=======
+        return new DocumentFolderResource($data, $messages = 'DocumentFolder created successfully');
+>>>>>>> 95b4514c99628c764e209138c5a16217ee7483f1
     }
 
     public function update(DocumentFolderRequest $request, int $id): SuccessResource
     {
         $data = $this->service->update($request->validated(), $id);
+<<<<<<< HEAD
         return  new DocumentFolderResource($data, $messages = 'DocumentFolder updated successfully');
+=======
+        return new DocumentFolderResource($data, $messages = 'DocumentFolder updated successfully');
+>>>>>>> 95b4514c99628c764e209138c5a16217ee7483f1
     }
 
     public function destroy(int $id): JsonResponse

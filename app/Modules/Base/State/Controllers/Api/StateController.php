@@ -10,6 +10,7 @@ use App\Modules\Base\State\Requests\StateRequest;
 use App\Http\Resources\SuccessResource;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Cache;
 
 class StateController extends Controller
 {
@@ -19,41 +20,52 @@ class StateController extends Controller
 
     public function index(): JsonResponse
     {
-        $data = State::getAll();
-        //dd($data->toArray());
+        // Use cache for all states
+        $data = Cache::rememberForever('states_all', function () {
+            return State::getAll();
+        });
         return (new StateCollection($data))->response();
     }
 
     public function show(int $id): SuccessResource
     {
-        $data = State::getById($id);
+        // Use cache for single state
+        $data = Cache::rememberForever("state_{$id}", function () use ($id) {
+            return State::getById($id);
+        });
         return new StateResource($data, $messages = 'State retrieved successfully');
-
-
     }
 
     public function store(StateRequest $request): SuccessResource
     {
         $data = State::store($request->validated());
+        // Clear state cache after create
+        Cache::forget('states_all');
+        if ($data && isset($data->id)) {
+            Cache::forget("state_{$data->id}");
+        }
         return new StateResource($data, $messages = 'State created successfully');
-
     }
 
     public function update(StateRequest $request, int $id): SuccessResource
     {
         $data = State::update($request->validated(), $id);
+        // Clear state cache after update
+        Cache::forget('states_all');
+        Cache::forget("state_{$id}");
         return new StateResource($data, $messages = 'State updated successfully');
-
     }
 
     public function destroy(int $id): JsonResponse
     {
         $result = State::delete($id);
+        // Clear state cache after delete
+        Cache::forget('states_all');
+        Cache::forget("state_{$id}");
         return new JsonResponse([
             'status' => $result,
             'code' => 204,
             'message' => $result ? 'State deleted successfully' : 'State not found',
         ]);
-
     }
 }

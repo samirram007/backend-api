@@ -27,19 +27,19 @@ class DocumentController extends Controller
     public function show(int $id): SuccessResource
     {
         $data = $this->service->getById($id);
-        return  new DocumentResource($data);
+        return new DocumentResource($data);
     }
 
     public function store(DocumentRequest $request): SuccessResource
     {
         $data = $this->service->store($request->validated());
-        return  new DocumentResource($data, $messages = 'Document created successfully');
+        return new DocumentResource($data, $messages = 'Document created successfully');
     }
 
     public function update(DocumentRequest $request, int $id): SuccessResource
     {
         $data = $this->service->update($request->validated(), $id);
-        return  new DocumentResource($data, $messages = 'Document updated successfully');
+        return new DocumentResource($data, $messages = 'Document updated successfully');
     }
 
     public function destroy(int $id): JsonResponse

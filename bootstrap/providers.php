@@ -1,33 +1,42 @@
 <?php
 
+use App\Providers\AiptModuleServiceLoader;
 use App\Providers\AppServiceProvider;
 use App\Providers\BaseModuleServiceLoader;
 use App\Providers\DocumentModuleServiceLoader;
 use App\Providers\HospitalModuleServiceLoader;
+use App\Providers\MaintenanceModuleServiceLoader;
 use App\Providers\SchoolModuleServiceLoader;
+use App\Providers\PathologyModuleServiceLoader;
+use App\Providers\HotelModuleServiceLoader;
+use App\Providers\RestaurantModuleServiceLoader;
 
-
-if (env('APP_MODULE') == "Hospital") {
-    // dd("Hospital Running");
-    return [
-        AppServiceProvider::class,
-        BaseModuleServiceLoader::class,
-        DocumentModuleServiceLoader::class,
-        HospitalModuleServiceLoader::class
-    ];
-} else if (env('APP_MODULE') == "School") {
-    return [
-        AppServiceProvider::class,
-        BaseModuleServiceLoader::class,
-        DocumentModuleServiceLoader::class,
-        SchoolModuleServiceLoader::class
-    ];
-}
-dd("Hospital Running 2");
-return [
+$providers = [
     AppServiceProvider::class,
     BaseModuleServiceLoader::class,
-    // DocumentModuleServiceLoader::class,
-    // SchoolModuleServiceLoader::class,
-    // HospitalModuleServiceLoader::class
+    DocumentModuleServiceLoader::class,
+    MaintenanceModuleServiceLoader::class,
 ];
+
+switch (env('APP_MODULE')) {
+    case 'Aipt':
+        $providers[] = AiptModuleServiceLoader::class;
+        break;
+    case 'School':
+        $providers[] = SchoolModuleServiceLoader::class;
+        break;
+    case 'Hospital':
+        $providers[] = HospitalModuleServiceLoader::class;
+        break;
+    case 'Pathology':
+        $providers[] = PathologyModuleServiceLoader::class;
+        break;
+    case 'Hotel':
+        $providers[] = HotelModuleServiceLoader::class;
+        break;
+    case 'Restaurant':
+        $providers[] = RestaurantModuleServiceLoader::class;
+        break;
+}
+
+return $providers;

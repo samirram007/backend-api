@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Services;
+namespace App\Modules\Document\DocumentMetaData\Services;
 
-use App\Modules\DocumentMetaData\Contracts\DocumentMetaDataServiceInterface;
-use App\Modules\DocumentMetaData\Models\DocumentMetaData;
+use App\Modules\Document\DocumentMetaData\Contracts\DocumentMetaDataServiceInterface;
+use App\Modules\Document\DocumentMetaData\Models\DocumentMetaData;
 use Illuminate\Database\Eloquent\Collection;
 
 class DocumentMetaDataService implements DocumentMetaDataServiceInterface
 {
-    protected $resource=[];
+    protected $resource = [];
 
     public function getAll(): Collection
     {

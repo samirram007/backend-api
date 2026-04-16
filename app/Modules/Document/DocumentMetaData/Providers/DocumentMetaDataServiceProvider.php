@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Providers;
+namespace App\Modules\Document\DocumentMetaData\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\DocumentMetaData\Contracts\DocumentMetaDataServiceInterface;
-use App\Modules\DocumentMetaData\Services\DocumentMetaDataService;
+use App\Modules\Document\DocumentMetaData\Contracts\DocumentMetaDataServiceInterface;
+use App\Modules\Document\DocumentMetaData\Services\DocumentMetaDataService;
 
 class DocumentMetaDataServiceProvider extends ServiceProvider
 {

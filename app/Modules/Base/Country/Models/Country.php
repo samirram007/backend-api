@@ -24,6 +24,25 @@ class Country extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::created(function ($country) {
+            \Cache::forget('countries_all');
+            \Cache::forget("country_{$country->id}");
+        });
+
+        static::updated(function ($country) {
+            \Cache::forget('countries_all');
+            \Cache::forget("country_{$country->id}");
+        });
+
+        static::deleted(function ($country) {
+            \Cache::forget('countries_all');
+            \Cache::forget("country_{$country->id}");
+        });
+    }
     public function states(): HasMany
     {
         return $this->hasMany(State::class);

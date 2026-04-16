@@ -3,38 +3,41 @@
 namespace App\Modules\Base\Country\Services;
 
 use App\Modules\Base\Country\Contracts\CountryServiceInterface;
-use App\Modules\Base\Country\Models\Country;
+use App\Modules\Base\Country\Contracts\CountryRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 class CountryService implements CountryServiceInterface
 {
     protected $resource = ['states'];
+    protected $repo;
+
+    public function __construct(CountryRepositoryInterface $repo)
+    {
+        $this->repo = $repo;
+    }
 
     public function getAll(): Collection
     {
-        return Country::with($this->resource)->get();
+        return $this->repo->all($this->resource);
     }
 
-    public function getById(int $id): ?Country
+    public function getById(int $id): ?\App\Modules\Base\Country\Models\Country
     {
-        return Country::with($this->resource)->findOrFail($id);
+        return $this->repo->find($id, $this->resource);
     }
 
-    public function store(array $data): Country
+    public function store(array $data): \App\Modules\Base\Country\Models\Country
     {
-        return Country::create($data);
+        return $this->repo->create($data);
     }
 
-    public function update(array $data, int $id): Country
+    public function update(array $data, int $id): \App\Modules\Base\Country\Models\Country
     {
-        $record = Country::findOrFail($id);
-        $record->update($data);
-        return $record->fresh();
+        return $this->repo->update($id, $data);
     }
 
     public function delete(int $id): bool
     {
-        $record = Country::findOrFail($id);
-        return $record->delete();
+        return $this->repo->delete($id);
     }
 }

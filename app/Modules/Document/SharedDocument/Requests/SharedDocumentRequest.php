@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\SharedDocument\Requests;
+namespace App\Modules\Document\SharedDocument\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -14,15 +14,15 @@ class SharedDocumentRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'name' => ['required', 'string', 'max:255','unique:shared_documents,name'],
-            'code' => ['sometimes','required', 'string', 'max:255','unique:shared_documents,code'],
-            'description' => ['sometimes','required', 'string', 'max:255'],
-            'status' => ['sometimes','required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255', 'unique:shared_documents,name'],
+            'code' => ['sometimes', 'required', 'string', 'max:255', 'unique:shared_documents,code'],
+            'description' => ['sometimes', 'required', 'string', 'max:255'],
+            'status' => ['sometimes', 'required', 'string', 'max:255'],
         ];
 
         // For update requests, make validation more flexible
         if ($this->isMethod('PUT') || $this->isMethod('PATCH')) {
-            $id=$this->route('shared_document');
+            $id = $this->route('shared_document');
             $rules['name'] = ['sometimes', 'required', 'string', 'max:255', 'unique:shared_documents,name,' . $id,];
             $rules['code'] = ['sometimes', 'required', 'string', 'max:255', 'unique:shared_documents,code,' . $id,];
 

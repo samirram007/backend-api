@@ -9,14 +9,17 @@ class SuccessCollection extends ResourceCollection
 {
     protected string $message;
     protected int $successCode;
+    protected ?string $duration;
     public function __construct(
         $resource,
         string $message = null,
+        string $duration = null,
         int $successCode = 200
     ) {
         parent::__construct($resource);
         $this->message = $message ?? 'Records fetched successfully';
         $this->successCode = $successCode;
+        $this->duration = $duration;
     }
 
     public function toArray(Request $request): array
@@ -28,6 +31,8 @@ class SuccessCollection extends ResourceCollection
     {
         return [
             'status' => true,
+            'success' => true,
+            'duration' => $this->duration ?? null,
             'code' => $this->successCode,
             'message' => $this->message . ' (' . $this->collection->count() . ' record(s))',
         ];

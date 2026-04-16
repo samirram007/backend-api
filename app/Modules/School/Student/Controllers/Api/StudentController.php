@@ -27,19 +27,19 @@ class StudentController extends Controller
     public function show(int $id): SuccessResource
     {
         $data = $this->service->getById($id);
-        return  new StudentResource($data);
+        return new StudentResource($data);
     }
 
     public function store(StudentRequest $request): SuccessResource
     {
         $data = $this->service->store($request->validated());
-        return  new StudentResource($data, $messages = 'Student created successfully');
+        return new StudentResource($data, $messages = 'Student created successfully');
     }
 
     public function update(StudentRequest $request, int $id): SuccessResource
     {
         $data = $this->service->update($request->validated(), $id);
-        return  new StudentResource($data, $messages = 'Student updated successfully');
+        return new StudentResource($data, $messages = 'Student updated successfully');
     }
 
     public function destroy(int $id): JsonResponse

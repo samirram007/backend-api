@@ -4,6 +4,11 @@ namespace App\Modules\Document\Document\Services;
 
 use App\Modules\Document\Document\Contracts\DocumentServiceInterface;
 use App\Modules\Document\Document\Models\Document;
+<<<<<<< HEAD
+=======
+use App\Modules\Document\Document\Requests\DocumentRequest;
+use App\Modules\Document\Document\Resources\DocumentResource;
+>>>>>>> 95b4514c99628c764e209138c5a16217ee7483f1
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -22,7 +27,7 @@ class DocumentService implements DocumentServiceInterface
         return Document::with($this->resource)->findOrFail($id);
     }
 
-    public function store(StoreDocumentRequest $request)
+    public function store(DocumentRequest $request)
     {
 
         $validatedData = $request->validatedWithFiles();
@@ -72,7 +77,7 @@ class DocumentService implements DocumentServiceInterface
         return response()->json(['error' => 'Unauthorized'], 401);
     }
 
-    public function update(UpdateDocumentRequest $request, $id)
+    public function update(DocumentRequest $request, $id)
     {
         $document = Document::find($id);
         $validatedData = $request->validated();

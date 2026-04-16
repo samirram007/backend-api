@@ -1,6 +1,6 @@
 <?php
 
-use App\Modules\School\Teacher\Providers;
+namespace App\Modules\School\Teacher\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;

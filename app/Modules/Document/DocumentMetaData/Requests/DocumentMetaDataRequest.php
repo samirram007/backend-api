@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\DocumentMetaData\Requests;
+namespace App\Modules\Document\DocumentMetaData\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -14,15 +14,15 @@ class DocumentMetaDataRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'name' => ['required', 'string', 'max:255','unique:document_meta_datas,name'],
-            'code' => ['sometimes','required', 'string', 'max:255','unique:document_meta_datas,code'],
-            'description' => ['sometimes','required', 'string', 'max:255'],
-            'status' => ['sometimes','required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255', 'unique:document_meta_datas,name'],
+            'code' => ['sometimes', 'required', 'string', 'max:255', 'unique:document_meta_datas,code'],
+            'description' => ['sometimes', 'required', 'string', 'max:255'],
+            'status' => ['sometimes', 'required', 'string', 'max:255'],
         ];
 
         // For update requests, make validation more flexible
         if ($this->isMethod('PUT') || $this->isMethod('PATCH')) {
-            $id=$this->route('document_meta_data');
+            $id = $this->route('document_meta_data');
             $rules['name'] = ['sometimes', 'required', 'string', 'max:255', 'unique:document_meta_datas,name,' . $id,];
             $rules['code'] = ['sometimes', 'required', 'string', 'max:255', 'unique:document_meta_datas,code,' . $id,];
 
