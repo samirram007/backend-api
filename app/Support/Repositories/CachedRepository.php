@@ -3,6 +3,7 @@
 namespace App\Support\Repositories;
 
 
+
 use App\Support\Contracts\BaseRepositoryInterface;
 use App\Support\Contracts\CachedRepositoryInterface;
 
@@ -18,6 +19,44 @@ class CachedRepository implements CachedRepositoryInterface
     {
         $this->ttl = env('CACHE_TTL', 3600);
         $this->prefix = strtolower(class_basename($repo));
+    }
+
+
+    // ========================
+    // Wrapped Methods
+    // ========================
+
+    public function all(array $with = [])
+    {
+        //dump("Cache key: " . $this->key('all', $with)); // Debugging line to check cache key generation
+        return $this->remember(
+            $this->key('all', $with),
+            fn() => $this->repo->all($with)
+        );
+    }
+
+    public function find(int $id, array $with = [])
+    {
+        return $this->remember(
+            $this->key('find', [$id, $with]),
+            fn() => $this->repo->find($id, $with)
+        );
+    }
+
+    public function where(array $conditions, array $with = [])
+    {
+        return $this->remember(
+            $this->key('where', [$conditions, $with]),
+            fn() => $this->repo->where($conditions, $with)
+        );
+    }
+
+    public function paginate(int $perPage = 15, array $with = [])
+    {
+        return $this->remember(
+            $this->key('paginate', [$perPage, request()->page ?? 1, $with]),
+            fn() => $this->repo->paginate($perPage, $with)
+        );
     }
 
     // ========================
@@ -83,41 +122,7 @@ class CachedRepository implements CachedRepositoryInterface
         return Cache::remember($key, $this->ttl, $callback);
     }
 
-    // ========================
-    // Wrapped Methods
-    // ========================
 
-    public function all(array $with = [])
-    {
-        return $this->remember(
-            $this->key('all', $with),
-            fn() => $this->repo->all($with)
-        );
-    }
-
-    public function find(int $id, array $with = [])
-    {
-        return $this->remember(
-            $this->key('find', [$id, $with]),
-            fn() => $this->repo->find($id, $with)
-        );
-    }
-
-    public function where(array $conditions, array $with = [])
-    {
-        return $this->remember(
-            $this->key('where', [$conditions, $with]),
-            fn() => $this->repo->where($conditions, $with)
-        );
-    }
-
-    public function paginate(int $perPage = 15, array $with = [])
-    {
-        return $this->remember(
-            $this->key('paginate', [$perPage, request()->page ?? 1, $with]),
-            fn() => $this->repo->paginate($perPage, $with)
-        );
-    }
 
     // ========================
     // Invalidate

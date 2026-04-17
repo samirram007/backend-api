@@ -11,11 +11,9 @@ class CompanyServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->bind(CompanyServiceInterface::class, CompanyService::class);
+        $this->app->singleton(CompanyServiceInterface::class, CompanyService::class);
 
-        $this->app->singleton('companies', function ($app) {
-            return $app->make(CompanyServiceInterface::class);
-        });
+
     }
 
     public function boot(): void

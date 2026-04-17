@@ -1,7 +1,8 @@
 <?php
 namespace App\Traits;
 
-use App\Modules\User\Models\User;
+
+use App\Modules\Base\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 trait Blameable

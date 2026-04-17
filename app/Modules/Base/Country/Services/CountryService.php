@@ -2,16 +2,17 @@
 
 namespace App\Modules\Base\Country\Services;
 
-use App\Modules\Base\Country\Contracts\CountryServiceInterface;
 use App\Modules\Base\Country\Contracts\CountryRepositoryInterface;
+use App\Modules\Base\Country\Contracts\CountryServiceInterface;
+
 use Illuminate\Database\Eloquent\Collection;
 
 class CountryService implements CountryServiceInterface
 {
     protected $resource = ['states'];
-    protected $repo;
 
-    public function __construct(CountryRepositoryInterface $repo)
+
+    public function __construct(protected CountryRepositoryInterface $repo)
     {
         $this->repo = $repo;
     }

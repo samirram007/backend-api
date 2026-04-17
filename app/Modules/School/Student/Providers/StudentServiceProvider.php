@@ -29,7 +29,7 @@ class StudentServiceProvider extends ServiceProvider
 
     private function loadMigrations(): void
     {
-        echo "Loading Student Migrations from: " . __DIR__ . '/../Database/Migrations' . "\n";
+        //echo "Loading Student Migrations from: " . __DIR__ . '/../Database/Migrations' . "\n";
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 }
