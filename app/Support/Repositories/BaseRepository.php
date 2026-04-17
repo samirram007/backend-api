@@ -10,24 +10,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
 {
     protected Model $model;
 
-    public function create(array $data)
-    {
-        return $this->model->create($data);
-    }
-
-    public function update($id, array $data)
-    {
-        $model = $this->find($id);
-        $model->update($data);
-        return $model;
-    }
-
-    public function delete($id)
-    {
-        $model = $this->find($id);
-        return $model->delete();
-    }
-
     public function query()
     {
         return $this->model->newQuery();
@@ -58,4 +40,24 @@ abstract class BaseRepository implements BaseRepositoryInterface
     {
         return $this->query()->with($with)->paginate($perPage);
     }
+
+    public function create(array $data)
+    {
+        return $this->model->create($data);
+    }
+
+    public function update($id, array $data)
+    {
+        $model = $this->find($id);
+        $model->update($data);
+        return $model;
+    }
+
+    public function delete($id)
+    {
+        $model = $this->find($id);
+        return $model->delete();
+    }
+
+
 }

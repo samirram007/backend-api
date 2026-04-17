@@ -22,6 +22,16 @@ class CachedRepository implements CachedRepositoryInterface
     }
 
 
+    /**
+     * Get a new query builder instance.
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function query()
+    {
+        return $this->repo->query();
+    }
+
     // ========================
     // Wrapped Methods
     // ========================

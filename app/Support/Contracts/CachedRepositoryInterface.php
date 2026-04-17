@@ -22,4 +22,7 @@ interface CachedRepositoryInterface extends BaseRepositoryInterface
      * Clear the cache for a single record by ID.
      */
     public function clearCacheById($id);
+
+
+
 }

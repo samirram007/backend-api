@@ -5,6 +5,7 @@ use App\Modules\Base\Country\Contracts\CountryRepositoryInterface;
 use App\Modules\Base\Country\Models\Country;
 
 
+use App\Support\Contracts\CachedRepositoryInterface;
 use App\Support\Repositories\BaseRepository;
 use App\Support\Repositories\CachedRepository;
 use Illuminate\Database\Eloquent\Model;
@@ -12,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 class CountryRepository extends BaseRepository implements CountryRepositoryInterface
 {
     protected Model $model;
-    protected CachedRepository $cacheRepo;
+    protected CachedRepositoryInterface $cacheRepo;
 
     public function __construct()
     {
@@ -40,5 +41,6 @@ class CountryRepository extends BaseRepository implements CountryRepositoryInter
     {
         $this->cacheRepo->clearCacheById($id);
     }
+
 
 }

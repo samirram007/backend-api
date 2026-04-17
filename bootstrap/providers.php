@@ -27,6 +27,7 @@ switch (env('APP_MODULE')) {
         break;
     case 'Hospital':
         $providers[] = HospitalModuleServiceLoader::class;
+
         break;
     case 'Pathology':
         $providers[] = PathologyModuleServiceLoader::class;
