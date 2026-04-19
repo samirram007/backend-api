@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\TicketPriority\Contracts;
+namespace App\Modules\Support\TicketPriority\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\TicketPriority\Models\TicketPriority;
+use App\Modules\Support\TicketPriority\Models\TicketPriority;
 
 interface TicketPriorityServiceInterface
 {

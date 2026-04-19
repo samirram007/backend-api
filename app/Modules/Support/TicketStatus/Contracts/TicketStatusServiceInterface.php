@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\TicketStatus\Contracts;
+namespace App\Modules\Support\TicketStatus\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\TicketStatus\Models\TicketStatus;
+use App\Modules\Support\TicketStatus\Models\TicketStatus;
 
 interface TicketStatusServiceInterface
 {

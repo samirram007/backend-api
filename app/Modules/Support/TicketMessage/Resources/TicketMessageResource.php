@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\TicketMessage\Resources;
+namespace App\Modules\Support\TicketMessage\Resources;
 
 use Illuminate\Http\Request;
 

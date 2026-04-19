@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\TicketMaster\Requests;
+namespace App\Modules\Support\TicketMaster\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;

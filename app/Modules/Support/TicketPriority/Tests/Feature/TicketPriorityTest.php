@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\TicketPriority\Tests\Feature;
+namespace App\Modules\Support\TicketPriority\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\TicketPriority\Models\TicketPriority;
+use App\Modules\Support\TicketPriority\Models\TicketPriority;
 
 class TicketPriorityTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\TicketType\Controllers\Api;
+namespace App\Modules\Support\TicketType\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Modules\TicketType\Contracts\TicketTypeServiceInterface;
-use App\Modules\TicketType\Resources\TicketTypeResource;
-use App\Modules\TicketType\Resources\TicketTypeCollection;
-use App\Modules\TicketType\Requests\TicketTypeRequest;
+use App\Modules\Support\TicketType\Contracts\TicketTypeServiceInterface;
+use App\Modules\Support\TicketType\Resources\TicketTypeResource;
+use App\Modules\Support\TicketType\Resources\TicketTypeCollection;
+use App\Modules\Support\TicketType\Requests\TicketTypeRequest;
 use App\Http\Resources\SuccessResource;
 use App\Http\Resources\SuccessCollection;
 use App\Traits\ApiResponseTrait;

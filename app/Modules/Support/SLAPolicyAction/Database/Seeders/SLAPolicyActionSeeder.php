@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\SLAPolicyAction\Database\Seeders;
+namespace App\Modules\Support\SLAPolicyAction\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Modules\SLAPolicyAction\Models\SLAPolicyAction;
+use App\Modules\Support\SLAPolicyAction\Models\SLAPolicyAction;
 
 class SLAPolicyActionSeeder extends Seeder
 {

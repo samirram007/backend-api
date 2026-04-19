@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\TicketEventType\Providers;
+namespace App\Modules\Support\TicketEventType\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\TicketEventType\Contracts\TicketEventTypeServiceInterface;
-use App\Modules\TicketEventType\Services\TicketEventTypeService;
+use App\Modules\Support\TicketEventType\Contracts\TicketEventTypeServiceInterface;
+use App\Modules\Support\TicketEventType\Services\TicketEventTypeService;
 
 class TicketEventTypeServiceProvider extends ServiceProvider
 {

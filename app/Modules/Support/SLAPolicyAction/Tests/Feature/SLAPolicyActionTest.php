@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\SLAPolicyAction\Tests\Feature;
+namespace App\Modules\Support\SLAPolicyAction\Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\SLAPolicyAction\Models\SLAPolicyAction;
+use App\Modules\Support\SLAPolicyAction\Models\SLAPolicyAction;
 
 class SLAPolicyActionTest extends TestCase
 {

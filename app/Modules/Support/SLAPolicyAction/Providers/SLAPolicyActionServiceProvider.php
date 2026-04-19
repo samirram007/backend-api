@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\SLAPolicyAction\Providers;
+namespace App\Modules\Support\SLAPolicyAction\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use App\Modules\SLAPolicyAction\Contracts\SLAPolicyActionServiceInterface;
-use App\Modules\SLAPolicyAction\Services\SLAPolicyActionService;
+use App\Modules\Support\SLAPolicyAction\Contracts\SLAPolicyActionServiceInterface;
+use App\Modules\Support\SLAPolicyAction\Services\SLAPolicyActionService;
 
 class SLAPolicyActionServiceProvider extends ServiceProvider
 {

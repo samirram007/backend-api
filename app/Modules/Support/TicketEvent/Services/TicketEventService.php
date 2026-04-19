@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\TicketEvent\Services;
+namespace App\Modules\Support\TicketEvent\Services;
 
-use App\Modules\TicketEvent\Contracts\TicketEventServiceInterface;
-use App\Modules\TicketEvent\Models\TicketEvent;
+use App\Modules\Support\TicketEvent\Contracts\TicketEventServiceInterface;
+use App\Modules\Support\TicketEvent\Models\TicketEvent;
 use Illuminate\Database\Eloquent\Collection;
 
 class TicketEventService implements TicketEventServiceInterface
 {
-    protected $resource=[];
+    protected $resource = [];
 
     public function getAll(): Collection
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\TicketPriority\Requests;
+namespace App\Modules\Support\TicketPriority\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

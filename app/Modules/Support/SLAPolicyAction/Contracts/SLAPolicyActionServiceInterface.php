@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\SLAPolicyAction\Contracts;
+namespace App\Modules\Support\SLAPolicyAction\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
-use App\Modules\SLAPolicyAction\Models\SLAPolicyAction;
+use App\Modules\Support\SLAPolicyAction\Models\SLAPolicyAction;
 
 interface SLAPolicyActionServiceInterface
 {

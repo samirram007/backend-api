@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\SLAPolicyAction\Resources;
+namespace App\Modules\Support\SLAPolicyAction\Resources;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\SuccessCollection;

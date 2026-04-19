@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\SLAPolicyRule\Models;
+namespace App\Modules\Support\SLAPolicyRule\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

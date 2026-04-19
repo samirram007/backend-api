@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\SLAPolicyAction\Requests;
+namespace App\Modules\Support\SLAPolicyAction\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

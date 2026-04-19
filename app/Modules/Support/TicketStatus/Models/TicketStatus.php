@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\TicketStatus\Models;
+namespace App\Modules\Support\TicketStatus\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

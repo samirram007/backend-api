@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\TicketStatus\Controllers\Api;
+namespace App\Modules\Support\TicketStatus\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Modules\TicketStatus\Contracts\TicketStatusServiceInterface;
-use App\Modules\TicketStatus\Resources\TicketStatusResource;
-use App\Modules\TicketStatus\Resources\TicketStatusCollection;
-use App\Modules\TicketStatus\Requests\TicketStatusRequest;
+use App\Modules\Support\TicketStatus\Contracts\TicketStatusServiceInterface;
+use App\Modules\Support\TicketStatus\Resources\TicketStatusResource;
+use App\Modules\Support\TicketStatus\Resources\TicketStatusCollection;
+use App\Modules\Support\TicketStatus\Requests\TicketStatusRequest;
 use App\Http\Resources\SuccessResource;
 use App\Http\Resources\SuccessCollection;
 use App\Traits\ApiResponseTrait;

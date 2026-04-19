@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\TicketPriority\Models;
+namespace App\Modules\Support\TicketPriority\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
