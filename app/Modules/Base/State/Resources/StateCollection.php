@@ -3,14 +3,18 @@
 namespace App\Modules\Base\State\Resources;
 
 use App\Http\Resources\SuccessCollection;
+use Illuminate\Http\Request;
+
 
 class StateCollection extends SuccessCollection
 {
-    public function __construct($resource, string $message = null)
+    /**
+     * Transform the resource collection into an array.
+     *
+     * @return array<int|string, mixed>
+     */
+    public function toArray(Request $request): array
     {
-        parent::__construct(
-            StateResource::collection($resource),
-            $message ?? 'State records fetched successfully'
-        );
+        return parent::toArray($request);
     }
 }

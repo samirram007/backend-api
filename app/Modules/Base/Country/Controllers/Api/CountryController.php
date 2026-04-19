@@ -25,12 +25,7 @@ class CountryController extends Controller
 
     public function index(): SuccessCollection
     {
-        $startTime = microtime(true);
         $data = Country::getAll();
-        $endTime = microtime(true);
-        $executionTime = $endTime - $startTime;
-        // Log execution time for debugging
-        Log::info("CountryController@index executed in {$executionTime} seconds");
         return new CountryCollection($data);
     }
 

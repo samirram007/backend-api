@@ -23,6 +23,7 @@ switch (env('APP_MODULE')) {
         $providers[] = AiptModuleServiceLoader::class;
         break;
     case 'School':
+         $providers[] = AiptModuleServiceLoader::class;
         $providers[] = SchoolModuleServiceLoader::class;
         break;
     case 'Hospital':
@@ -39,5 +40,5 @@ switch (env('APP_MODULE')) {
         $providers[] = RestaurantModuleServiceLoader::class;
         break;
 }
-
+//printf("Registered Providers: %s\n", implode("\n", $providers));
 return $providers;

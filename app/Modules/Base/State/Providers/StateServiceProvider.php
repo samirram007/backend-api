@@ -2,6 +2,8 @@
 
 namespace App\Modules\Base\State\Providers;
 
+use App\Modules\Base\State\Contracts\StateRepositoryInterface;
+use App\Modules\Base\State\Repositories\StateRepository;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 use App\Modules\Base\State\Contracts\StateServiceInterface;
@@ -11,10 +13,9 @@ class StateServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->bind(StateServiceInterface::class, StateService::class);
-        $this->app->singleton('state', function ($app) {
-            return $app->make(StateServiceInterface::class);
-        });
+        $this->app->bind(StateRepositoryInterface::class, StateRepository::class);
+        $this->app->singleton(StateServiceInterface::class, StateService::class);
+
     }
 
     public function boot(): void

@@ -4,9 +4,10 @@ namespace App\Modules\Base\State\Resources;
 
 use App\Http\Resources\SuccessResource;
 
+
 use App\Modules\Base\Country\Resources\CountryResource;
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\JsonResource;
+
 
 class StateResource extends SuccessResource
 {

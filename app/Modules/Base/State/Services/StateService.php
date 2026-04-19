@@ -3,6 +3,7 @@
 namespace App\Modules\Base\State\Services;
 
 use App\Modules\Base\State\Contracts\StateServiceInterface;
+use App\Modules\Base\State\Facades\StateRepoFacade;
 use App\Modules\Base\State\Models\State;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -12,29 +13,29 @@ class StateService implements StateServiceInterface
 
     public function getAll(): Collection
     {
-        return State::with($this->resource)->get();
+        return StateRepoFacade::all($this->resource);
     }
 
     public function getById(int $id): ?State
     {
-        return State::with($this->resource)->findOrFail($id);
+        return StateRepoFacade::find($id, $this->resource);
     }
 
     public function store(array $data): State
     {
-        return State::create($data);
+        return StateRepoFacade::create($data);
     }
 
     public function update(array $data, int $id): State
     {
-        $record = State::findOrFail($id);
+        $record = StateRepoFacade::find($id);
         $record->update($data);
         return $record->fresh();
     }
 
     public function delete(int $id): bool
     {
-        $record = State::findOrFail($id);
+        $record = StateRepoFacade::find($id);
         return $record->delete();
     }
 }

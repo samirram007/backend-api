@@ -5,6 +5,8 @@ namespace App\Modules\Base\Country\Services;
 use App\Modules\Base\Country\Contracts\CountryRepositoryInterface;
 use App\Modules\Base\Country\Contracts\CountryServiceInterface;
 
+use App\Modules\Base\Country\Facades\CountryRepoFacade;
+use App\Modules\Base\Country\Models\Country;
 use Illuminate\Database\Eloquent\Collection;
 
 class CountryService implements CountryServiceInterface
@@ -12,33 +14,33 @@ class CountryService implements CountryServiceInterface
     protected $resource = ['states'];
 
 
-    public function __construct(protected CountryRepositoryInterface $repo)
+    public function __construct()
     {
-        $this->repo = $repo;
+
     }
 
     public function getAll(): Collection
     {
-        return $this->repo->all($this->resource);
+        return CountryRepoFacade::all($this->resource);
     }
 
-    public function getById(int $id): ?\App\Modules\Base\Country\Models\Country
+    public function getById(int $id): ?Country
     {
-        return $this->repo->find($id, $this->resource);
+        return CountryRepoFacade::find($id, $this->resource);
     }
 
-    public function store(array $data): \App\Modules\Base\Country\Models\Country
+    public function store(array $data): Country
     {
-        return $this->repo->create($data);
+        return CountryRepoFacade::create($data);
     }
 
-    public function update(array $data, int $id): \App\Modules\Base\Country\Models\Country
+    public function update(array $data, int $id): Country
     {
-        return $this->repo->update($id, $data);
+        return CountryRepoFacade::update($id, $data);
     }
 
     public function delete(int $id): bool
     {
-        return $this->repo->delete($id);
+        return CountryRepoFacade::delete($id);
     }
 }

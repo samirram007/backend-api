@@ -18,13 +18,11 @@ class StateController extends Controller
 
 
 
-    public function index(): JsonResponse
+    public function index(): StateCollection
     {
         // Use cache for all states
-        $data = Cache::rememberForever('states_all', function () {
-            return State::getAll();
-        });
-        return (new StateCollection($data))->response();
+        $data = State::getAll();
+        return new StateCollection($data);
     }
 
     public function show(int $id): SuccessResource

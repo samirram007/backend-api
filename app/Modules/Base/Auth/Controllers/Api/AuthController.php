@@ -24,7 +24,7 @@ class AuthController extends Controller
         protected AuthServiceInterface $authService,
         protected UserServiceInterface $userService
     ) {
-        $this->domain = config('session.domain');
+        $this->domain = strtolower(config('session.domain'));
         // $this->token_expire_duration = env('TOKEN_EXPIRE_DURATION', 30000);
         $this->token_expire_duration = config('session.lifetime') * 60;
     }

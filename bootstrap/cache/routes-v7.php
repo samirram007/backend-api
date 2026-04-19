@@ -141,7 +141,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::6Q6Nr0rqv1VNTB7k',
+            '_route' => 'generated::j834i3SfXW1SPusf',
           ),
           1 => NULL,
           2 => 
@@ -160,7 +160,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::mZH3gS8fEVekK7Qb',
+            '_route' => 'generated::sA5WqHyAdyw5Davh',
           ),
           1 => NULL,
           2 => 
@@ -179,7 +179,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BGT6618diXiLcKN7',
+            '_route' => 'generated::JTVmeQHPpejzz2YK',
           ),
           1 => NULL,
           2 => 
@@ -198,7 +198,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::IUYEtISt1CRIU9iY',
+            '_route' => 'generated::IjKYGRZhHAYWdgO3',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::uYgWAaLAz8AiI1cd',
+            '_route' => 'generated::7z6Y5NLFOWNK0D2q',
           ),
           1 => NULL,
           2 => 
@@ -234,7 +234,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::TXL5qK5ytb9NL638',
+            '_route' => 'generated::ZD8EhgwLo4y1jLo5',
           ),
           1 => NULL,
           2 => 
@@ -253,7 +253,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::aiOmnoXnNDbfYTQY',
+            '_route' => 'generated::6n7kOJWIEFJ4Gfve',
           ),
           1 => NULL,
           2 => 
@@ -272,7 +272,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::CEHodo086qVKk7Us',
+            '_route' => 'generated::ab828VzwFOvU3DeZ',
           ),
           1 => NULL,
           2 => 
@@ -292,7 +292,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::rrgmXvdKELiuBhCH',
+            '_route' => 'generated::z292vvgrf6eFFJDv',
           ),
           1 => NULL,
           2 => 
@@ -312,7 +312,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::StR4O6vQHl9viqls',
+            '_route' => 'generated::nuNsuWz8YDIrzWx8',
           ),
           1 => NULL,
           2 => 
@@ -332,7 +332,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Bf2CVMlswdCRXzkI',
+            '_route' => 'generated::8PP8nyRmKBKDHugp',
           ),
           1 => NULL,
           2 => 
@@ -711,7 +711,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::51akRSH9yz9IQh8r',
+            '_route' => 'generated::aLjtbgA3cQKOcep2',
           ),
           1 => NULL,
           2 => 
@@ -904,6 +904,342 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/api/backups' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'backups.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'backups.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/restores' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'restores.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'restores.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/account_groups' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_groups.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_groups.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/current_liability_groups' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::UM9aW3ChhvuojvKo',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/account_ledgers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_ledgers.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_ledgers.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/purchase_ledgers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::WPvr9Y5bhgkAdwar',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/sale_ledgers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::HqIZ7q401hGXcouB',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/supplier_ledgers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::BVc7N4bkCUpFkYXa',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/distributor_ledgers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::XfQvTEOeHJT9CNyx',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/stock_in_hand_ledgers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::vNMIrOe4LyA4ZHYU',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/account_natures' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_natures.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_natures.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/academic_classes' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'academic_classes.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'academic_classes.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/api/academic_sessions' => 
       array (
         0 => 
@@ -976,6 +1312,438 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/api/admissions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admissions.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admissions.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/buildings' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'buildings.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'buildings.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/campuses' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'campuses.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'campuses.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/education_boards' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'education_boards.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'education_boards.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/examinations' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examinations.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examinations.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/examination_results' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_results.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_results.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/examination_schedules' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_schedules.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_schedules.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/examination_standards' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_standards.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_standards.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/examination_types' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_types.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_types.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/expenses' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expenses.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expenses.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/expense_groups' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_groups.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_groups.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/expense_heads' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_heads.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_heads.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/api/fees' => 
       array (
         0 => 
@@ -1000,6 +1768,294 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'fees.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/fee_heads' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_heads.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_heads.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/fee_items' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_items.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_items.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/fee_item_months' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_item_months.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_item_months.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/fee_rules' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_rules.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_rules.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/fee_templates' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_templates.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_templates.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/floors' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'floors.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'floors.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/guardians' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'guardians.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'guardians.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/income_groups' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'income_groups.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'income_groups.store',
           ),
           1 => NULL,
           2 => 
@@ -1090,7 +2146,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LcMOfLxKo56qH2W1',
+            '_route' => 'generated::1FRZKPi1n70yUxlr',
           ),
           1 => NULL,
           2 => 
@@ -1109,7 +2165,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::HStPm67pNb956uzQ',
+            '_route' => 'generated::F03BMlOPHjSK2qMN',
           ),
           1 => NULL,
           2 => 
@@ -1128,7 +2184,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2E4oSgG887wscU93',
+            '_route' => 'generated::9nbTI5egjXgAmPSb',
           ),
           1 => NULL,
           2 => 
@@ -1148,7 +2204,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::qLzHbXZ9P8FHYk0I',
+            '_route' => 'generated::7u6j89cZ7882blVj',
           ),
           1 => NULL,
           2 => 
@@ -1168,7 +2224,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::fd3KCK7UuBN04AST',
+            '_route' => 'generated::tn4r9LLlZ9tkfSpz',
           ),
           1 => NULL,
           2 => 
@@ -1188,7 +2244,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LHMDMcNSUMwYRLw2',
+            '_route' => 'generated::IZbF8IZp7wv0iDil',
           ),
           1 => NULL,
           2 => 
@@ -1277,11 +2333,11 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/api/(?|a(?|ddresses/([^/]++)(?|(*:39))|pp_module(?|s/([^/]++)(?|(*:72))|_features/([^/]++)(?|(*:101)))|uth/(google|github)(?|(*:133)|/callback(*:150))|cademic_s(?|essions/([^/]++)(?|(*:190))|tandards/([^/]++)(?|(*:219))))|role(?|/([^/]++)/module\\-features/([^/]++)(*:272)|s/([^/]++)(?|(*:293)))|c(?|o(?|mpan(?|ies/([^/]++)(?|(*:333))|y_types/([^/]++)(?|(*:361)))|untries/([^/]++)(?|(*:390)))|urrencies/([^/]++)(?|(*:421)))|f(?|iscal_years/(?|([^/]++)(?|(*:461))|current(*:477)|active(*:491))|ees/([^/]++)(?|(*:515)))|permissions/([^/]++)(?|(*:548))|s(?|t(?|ates/([^/]++)(?|(*:581))|udents/([^/]++)(?|(*:608)))|hared_documents/([^/]++)(?|(*:645)))|user(?|s/([^/]++)(?|(*:675))|_(?|fiscal_years/([^/]++)(?|(*:712))|roles/([^/]++)(?|(*:738))))|document(?|s/([^/]++)(?|(*:773))|_(?|folders/([^/]++)(?|(*:805))|meta_datas/([^/]++)(?|(*:836))))|teachers/([^/]++)(?|(*:867))|enums/([^/]++)(*:890))|/storage/(.*)(?|(*:915)))/?$}sDu',
+      0 => '{^(?|/api/(?|a(?|d(?|dresses/([^/]++)(?|(*:42))|missions/([^/]++)(?|(*:70)))|pp_module(?|s/([^/]++)(?|(*:104))|_features/([^/]++)(?|(*:134)))|uth/(google|github)(?|(*:166)|/callback(*:183))|c(?|count_(?|groups/([^/]++)(?|(*:223))|ledgers/([^/]++)(?|(*:251))|natures/([^/]++)(?|(*:279)))|ademic_(?|classes/([^/]++)(?|(*:318))|s(?|essions/([^/]++)(?|(*:350))|tandards/([^/]++)(?|(*:379))))))|r(?|ole(?|/([^/]++)/module\\-features/([^/]++)(*:437)|s/([^/]++)(?|(*:458)))|estores/([^/]++)(?|(*:487)))|c(?|o(?|mpan(?|ies/([^/]++)(?|(*:527))|y_types/([^/]++)(?|(*:555)))|untries/([^/]++)(?|(*:584)))|urrencies/([^/]++)(?|(*:615))|ampuses/([^/]++)(?|(*:643)))|f(?|iscal_years/(?|([^/]++)(?|(*:683))|current(*:699)|active(*:713))|ee(?|s/([^/]++)(?|(*:740))|_(?|heads/([^/]++)(?|(*:770))|item(?|s/([^/]++)(?|(*:799))|_months/([^/]++)(?|(*:827)))|rules/([^/]++)(?|(*:854))|templates/([^/]++)(?|(*:884))))|loors/([^/]++)(?|(*:912)))|permissions/([^/]++)(?|(*:945))|s(?|t(?|ates/([^/]++)(?|(*:978))|udents/([^/]++)(?|(*:1005)))|hared_documents/([^/]++)(?|(*:1043)))|user(?|s/([^/]++)(?|(*:1074))|_(?|fiscal_years/([^/]++)(?|(*:1112))|roles/([^/]++)(?|(*:1139))))|document(?|s/([^/]++)(?|(*:1175))|_(?|folders/([^/]++)(?|(*:1208))|meta_datas/([^/]++)(?|(*:1240))))|b(?|ackups/([^/]++)(?|(*:1274))|uildings/([^/]++)(?|(*:1304)))|ledger_balance/([^/]++)(*:1338)|e(?|ducation_boards/([^/]++)(?|(*:1378))|x(?|amination(?|s/([^/]++)(?|(*:1417))|_(?|results/([^/]++)(?|(*:1450))|s(?|chedules/([^/]++)(?|(*:1484))|tandards/([^/]++)(?|(*:1514)))|types/([^/]++)(?|(*:1542))))|pense(?|s/([^/]++)(?|(*:1575))|_(?|groups/([^/]++)(?|(*:1607))|heads/([^/]++)(?|(*:1634)))))|nums/([^/]++)(*:1660))|guardians/([^/]++)(?|(*:1691))|income_groups/([^/]++)(?|(*:1726))|teachers/([^/]++)(?|(*:1756)))|/storage/(.*)(?|(*:1783)))/?$}sDu',
     ),
     3 => 
     array (
-      39 => 
+      42 => 
       array (
         0 => 
         array (
@@ -1343,7 +2399,69 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      72 => 
+      70 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admissions.show',
+          ),
+          1 => 
+          array (
+            0 => 'admission',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admissions.update',
+          ),
+          1 => 
+          array (
+            0 => 'admission',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admissions.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'admission',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      104 => 
       array (
         0 => 
         array (
@@ -1405,7 +2523,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      101 => 
+      134 => 
       array (
         0 => 
         array (
@@ -1467,13 +2585,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      133 => 
+      166 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::WdLKhSRVlSKCsczJ',
+            '_route' => 'generated::6ERH4QphFukCscbT',
           ),
           1 => 
           array (
@@ -1490,13 +2608,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      150 => 
+      183 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::OJaU4yKQ2fhipLhu',
+            '_route' => 'generated::imoxYvdJglNwfaLV',
           ),
           1 => 
           array (
@@ -1513,7 +2631,255 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      190 => 
+      223 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_groups.show',
+          ),
+          1 => 
+          array (
+            0 => 'account_group',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_groups.update',
+          ),
+          1 => 
+          array (
+            0 => 'account_group',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_groups.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'account_group',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      251 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_ledgers.show',
+          ),
+          1 => 
+          array (
+            0 => 'account_ledger',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_ledgers.update',
+          ),
+          1 => 
+          array (
+            0 => 'account_ledger',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_ledgers.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'account_ledger',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      279 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_natures.show',
+          ),
+          1 => 
+          array (
+            0 => 'account_nature',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_natures.update',
+          ),
+          1 => 
+          array (
+            0 => 'account_nature',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'account_natures.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'account_nature',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      318 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'academic_classes.show',
+          ),
+          1 => 
+          array (
+            0 => 'academic_class',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'academic_classes.update',
+          ),
+          1 => 
+          array (
+            0 => 'academic_class',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'academic_classes.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'academic_class',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      350 => 
       array (
         0 => 
         array (
@@ -1575,7 +2941,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      219 => 
+      379 => 
       array (
         0 => 
         array (
@@ -1637,13 +3003,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      272 => 
+      437 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::UZ09hxx0iYtOKHHV',
+            '_route' => 'generated::PeIdtpBuQT85G4us',
           ),
           1 => 
           array (
@@ -1661,7 +3027,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      293 => 
+      458 => 
       array (
         0 => 
         array (
@@ -1723,7 +3089,69 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      333 => 
+      487 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'restores.show',
+          ),
+          1 => 
+          array (
+            0 => 'restore',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'restores.update',
+          ),
+          1 => 
+          array (
+            0 => 'restore',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'restores.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'restore',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      527 => 
       array (
         0 => 
         array (
@@ -1785,7 +3213,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      361 => 
+      555 => 
       array (
         0 => 
         array (
@@ -1847,7 +3275,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      390 => 
+      584 => 
       array (
         0 => 
         array (
@@ -1909,7 +3337,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      421 => 
+      615 => 
       array (
         0 => 
         array (
@@ -1971,7 +3399,69 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      461 => 
+      643 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'campuses.show',
+          ),
+          1 => 
+          array (
+            0 => 'campus',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'campuses.update',
+          ),
+          1 => 
+          array (
+            0 => 'campus',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'campuses.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'campus',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      683 => 
       array (
         0 => 
         array (
@@ -2033,13 +3523,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      477 => 
+      699 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::VZOHEpbjp534fmrS',
+            '_route' => 'generated::lekypDIRxF5r3LXO',
           ),
           1 => 
           array (
@@ -2055,13 +3545,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      491 => 
+      713 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::MMpK5OfJvnx9sRnY',
+            '_route' => 'generated::mJbkI2pB4l5liOD0',
           ),
           1 => 
           array (
@@ -2077,7 +3567,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      515 => 
+      740 => 
       array (
         0 => 
         array (
@@ -2139,7 +3629,379 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      548 => 
+      770 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_heads.show',
+          ),
+          1 => 
+          array (
+            0 => 'fee_head',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_heads.update',
+          ),
+          1 => 
+          array (
+            0 => 'fee_head',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_heads.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'fee_head',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      799 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_items.show',
+          ),
+          1 => 
+          array (
+            0 => 'fee_item',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_items.update',
+          ),
+          1 => 
+          array (
+            0 => 'fee_item',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_items.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'fee_item',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      827 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_item_months.show',
+          ),
+          1 => 
+          array (
+            0 => 'fee_item_month',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_item_months.update',
+          ),
+          1 => 
+          array (
+            0 => 'fee_item_month',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_item_months.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'fee_item_month',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      854 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_rules.show',
+          ),
+          1 => 
+          array (
+            0 => 'fee_rule',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_rules.update',
+          ),
+          1 => 
+          array (
+            0 => 'fee_rule',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_rules.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'fee_rule',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      884 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_templates.show',
+          ),
+          1 => 
+          array (
+            0 => 'fee_template',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_templates.update',
+          ),
+          1 => 
+          array (
+            0 => 'fee_template',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'fee_templates.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'fee_template',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      912 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'floors.show',
+          ),
+          1 => 
+          array (
+            0 => 'floor',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'floors.update',
+          ),
+          1 => 
+          array (
+            0 => 'floor',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'floors.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'floor',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      945 => 
       array (
         0 => 
         array (
@@ -2201,7 +4063,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      581 => 
+      978 => 
       array (
         0 => 
         array (
@@ -2263,7 +4125,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      608 => 
+      1005 => 
       array (
         0 => 
         array (
@@ -2325,7 +4187,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      645 => 
+      1043 => 
       array (
         0 => 
         array (
@@ -2387,7 +4249,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      675 => 
+      1074 => 
       array (
         0 => 
         array (
@@ -2449,7 +4311,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      712 => 
+      1112 => 
       array (
         0 => 
         array (
@@ -2511,7 +4373,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      738 => 
+      1139 => 
       array (
         0 => 
         array (
@@ -2573,7 +4435,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      773 => 
+      1175 => 
       array (
         0 => 
         array (
@@ -2635,7 +4497,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      805 => 
+      1208 => 
       array (
         0 => 
         array (
@@ -2697,7 +4559,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      836 => 
+      1240 => 
       array (
         0 => 
         array (
@@ -2759,7 +4621,859 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      867 => 
+      1274 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'backups.show',
+          ),
+          1 => 
+          array (
+            0 => 'backup',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'backups.update',
+          ),
+          1 => 
+          array (
+            0 => 'backup',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'backups.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'backup',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1304 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'buildings.show',
+          ),
+          1 => 
+          array (
+            0 => 'building',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'buildings.update',
+          ),
+          1 => 
+          array (
+            0 => 'building',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'buildings.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'building',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1338 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::9yfSzd4EenP3NLQt',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1378 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'education_boards.show',
+          ),
+          1 => 
+          array (
+            0 => 'education_board',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'education_boards.update',
+          ),
+          1 => 
+          array (
+            0 => 'education_board',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'education_boards.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'education_board',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1417 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examinations.show',
+          ),
+          1 => 
+          array (
+            0 => 'examination',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examinations.update',
+          ),
+          1 => 
+          array (
+            0 => 'examination',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examinations.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'examination',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1450 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_results.show',
+          ),
+          1 => 
+          array (
+            0 => 'examination_result',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_results.update',
+          ),
+          1 => 
+          array (
+            0 => 'examination_result',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_results.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'examination_result',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1484 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_schedules.show',
+          ),
+          1 => 
+          array (
+            0 => 'examination_schedule',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_schedules.update',
+          ),
+          1 => 
+          array (
+            0 => 'examination_schedule',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_schedules.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'examination_schedule',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1514 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_standards.show',
+          ),
+          1 => 
+          array (
+            0 => 'examination_standard',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_standards.update',
+          ),
+          1 => 
+          array (
+            0 => 'examination_standard',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_standards.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'examination_standard',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1542 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_types.show',
+          ),
+          1 => 
+          array (
+            0 => 'examination_type',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_types.update',
+          ),
+          1 => 
+          array (
+            0 => 'examination_type',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'examination_types.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'examination_type',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1575 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expenses.show',
+          ),
+          1 => 
+          array (
+            0 => 'expense',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expenses.update',
+          ),
+          1 => 
+          array (
+            0 => 'expense',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expenses.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'expense',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1607 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_groups.show',
+          ),
+          1 => 
+          array (
+            0 => 'expense_group',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_groups.update',
+          ),
+          1 => 
+          array (
+            0 => 'expense_group',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_groups.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'expense_group',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1634 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_heads.show',
+          ),
+          1 => 
+          array (
+            0 => 'expense_head',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_heads.update',
+          ),
+          1 => 
+          array (
+            0 => 'expense_head',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'expense_heads.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'expense_head',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1660 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::kgn5bAR7FVpmV5gF',
+          ),
+          1 => 
+          array (
+            0 => 'enum',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1691 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'guardians.show',
+          ),
+          1 => 
+          array (
+            0 => 'guardian',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'guardians.update',
+          ),
+          1 => 
+          array (
+            0 => 'guardian',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'guardians.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'guardian',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1726 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'income_groups.show',
+          ),
+          1 => 
+          array (
+            0 => 'income_group',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'income_groups.update',
+          ),
+          1 => 
+          array (
+            0 => 'income_group',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'income_groups.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'income_group',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1756 => 
       array (
         0 => 
         array (
@@ -2821,30 +5535,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      890 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::VZxXH0ZzbAyjQA5R',
-          ),
-          1 => 
-          array (
-            0 => 'enum',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      915 => 
+      1783 => 
       array (
         0 => 
         array (
@@ -3502,7 +6193,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::UZ09hxx0iYtOKHHV' => 
+    'generated::PeIdtpBuQT85G4us' => 
     array (
       'methods' => 
       array (
@@ -3524,7 +6215,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::UZ09hxx0iYtOKHHV',
+        'as' => 'generated::PeIdtpBuQT85G4us',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3540,7 +6231,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::6Q6Nr0rqv1VNTB7k' => 
+    'generated::j834i3SfXW1SPusf' => 
     array (
       'methods' => 
       array (
@@ -3560,7 +6251,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::6Q6Nr0rqv1VNTB7k',
+        'as' => 'generated::j834i3SfXW1SPusf',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3576,7 +6267,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::mZH3gS8fEVekK7Qb' => 
+    'generated::sA5WqHyAdyw5Davh' => 
     array (
       'methods' => 
       array (
@@ -3596,7 +6287,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::mZH3gS8fEVekK7Qb',
+        'as' => 'generated::sA5WqHyAdyw5Davh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3612,7 +6303,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BGT6618diXiLcKN7' => 
+    'generated::JTVmeQHPpejzz2YK' => 
     array (
       'methods' => 
       array (
@@ -3631,13 +6322,13 @@ app('router')->setCompiledRoutes(
             \'message\' => \'User profile fetched successfully.\',
             \'data\' => [],
         ]);
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009540000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000ab50000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api/auth',
         'where' => 
         array (
         ),
-        'as' => 'generated::BGT6618diXiLcKN7',
+        'as' => 'generated::JTVmeQHPpejzz2YK',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3653,7 +6344,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::IUYEtISt1CRIU9iY' => 
+    'generated::IjKYGRZhHAYWdgO3' => 
     array (
       'methods' => 
       array (
@@ -3673,7 +6364,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::IUYEtISt1CRIU9iY',
+        'as' => 'generated::IjKYGRZhHAYWdgO3',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3689,7 +6380,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::uYgWAaLAz8AiI1cd' => 
+    'generated::7z6Y5NLFOWNK0D2q' => 
     array (
       'methods' => 
       array (
@@ -3710,7 +6401,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::uYgWAaLAz8AiI1cd',
+        'as' => 'generated::7z6Y5NLFOWNK0D2q',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3726,7 +6417,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::WdLKhSRVlSKCsczJ' => 
+    'generated::6ERH4QphFukCscbT' => 
     array (
       'methods' => 
       array (
@@ -3747,7 +6438,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::WdLKhSRVlSKCsczJ',
+        'as' => 'generated::6ERH4QphFukCscbT',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3764,7 +6455,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::OJaU4yKQ2fhipLhu' => 
+    'generated::imoxYvdJglNwfaLV' => 
     array (
       'methods' => 
       array (
@@ -3785,7 +6476,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::OJaU4yKQ2fhipLhu',
+        'as' => 'generated::imoxYvdJglNwfaLV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3802,7 +6493,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TXL5qK5ytb9NL638' => 
+    'generated::ZD8EhgwLo4y1jLo5' => 
     array (
       'methods' => 
       array (
@@ -3823,7 +6514,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::TXL5qK5ytb9NL638',
+        'as' => 'generated::ZD8EhgwLo4y1jLo5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3839,7 +6530,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::aiOmnoXnNDbfYTQY' => 
+    'generated::6n7kOJWIEFJ4Gfve' => 
     array (
       'methods' => 
       array (
@@ -3860,7 +6551,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::aiOmnoXnNDbfYTQY',
+        'as' => 'generated::6n7kOJWIEFJ4Gfve',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3876,7 +6567,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::CEHodo086qVKk7Us' => 
+    'generated::ab828VzwFOvU3DeZ' => 
     array (
       'methods' => 
       array (
@@ -3898,7 +6589,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::CEHodo086qVKk7Us',
+        'as' => 'generated::ab828VzwFOvU3DeZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3914,7 +6605,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::rrgmXvdKELiuBhCH' => 
+    'generated::z292vvgrf6eFFJDv' => 
     array (
       'methods' => 
       array (
@@ -3936,7 +6627,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::rrgmXvdKELiuBhCH',
+        'as' => 'generated::z292vvgrf6eFFJDv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3952,7 +6643,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::StR4O6vQHl9viqls' => 
+    'generated::nuNsuWz8YDIrzWx8' => 
     array (
       'methods' => 
       array (
@@ -3974,7 +6665,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::StR4O6vQHl9viqls',
+        'as' => 'generated::nuNsuWz8YDIrzWx8',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3990,7 +6681,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Bf2CVMlswdCRXzkI' => 
+    'generated::8PP8nyRmKBKDHugp' => 
     array (
       'methods' => 
       array (
@@ -4011,7 +6702,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Bf2CVMlswdCRXzkI',
+        'as' => 'generated::8PP8nyRmKBKDHugp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4957,7 +7648,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::VZOHEpbjp534fmrS' => 
+    'generated::lekypDIRxF5r3LXO' => 
     array (
       'methods' => 
       array (
@@ -4979,7 +7670,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::VZOHEpbjp534fmrS',
+        'as' => 'generated::lekypDIRxF5r3LXO',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4995,7 +7686,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MMpK5OfJvnx9sRnY' => 
+    'generated::mJbkI2pB4l5liOD0' => 
     array (
       'methods' => 
       array (
@@ -5017,7 +7708,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::MMpK5OfJvnx9sRnY',
+        'as' => 'generated::mJbkI2pB4l5liOD0',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5968,7 +8659,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::51akRSH9yz9IQh8r' => 
+    'generated::aLjtbgA3cQKOcep2' => 
     array (
       'methods' => 
       array (
@@ -5989,7 +8680,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::51akRSH9yz9IQh8r',
+        'as' => 'generated::aLjtbgA3cQKOcep2',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6945,6 +9636,1400 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'backups.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/backups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'backups.index',
+        'uses' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@index',
+        'controller' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'backups.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/backups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'backups.store',
+        'uses' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@store',
+        'controller' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'backups.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/backups/{backup}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'backups.show',
+        'uses' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@show',
+        'controller' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'backups.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/backups/{backup}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'backups.update',
+        'uses' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@update',
+        'controller' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'backups.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/backups/{backup}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'backups.destroy',
+        'uses' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@destroy',
+        'controller' => 'App\\Modules\\Maintenance\\Backup\\Controllers\\Api\\BackupController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'restores.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/restores',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'restores.index',
+        'uses' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@index',
+        'controller' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'restores.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/restores',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'restores.store',
+        'uses' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@store',
+        'controller' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'restores.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/restores/{restore}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'restores.show',
+        'uses' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@show',
+        'controller' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'restores.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/restores/{restore}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'restores.update',
+        'uses' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@update',
+        'controller' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'restores.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/restores/{restore}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'restores.destroy',
+        'uses' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@destroy',
+        'controller' => 'App\\Modules\\Maintenance\\Restore\\Controllers\\Api\\RestoreController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_groups.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/account_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_groups.index',
+        'uses' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@index',
+        'controller' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_groups.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/account_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_groups.store',
+        'uses' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@store',
+        'controller' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_groups.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/account_groups/{account_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_groups.show',
+        'uses' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@show',
+        'controller' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_groups.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/account_groups/{account_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_groups.update',
+        'uses' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@update',
+        'controller' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_groups.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/account_groups/{account_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_groups.destroy',
+        'uses' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@destroy',
+        'controller' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::UM9aW3ChhvuojvKo' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/current_liability_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@current_liability_groups',
+        'controller' => 'App\\Modules\\Aipt\\AccountGroup\\Controllers\\Api\\AccountGroupController@current_liability_groups',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::UM9aW3ChhvuojvKo',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_ledgers.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/account_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_ledgers.index',
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@index',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_ledgers.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/account_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_ledgers.store',
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@store',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_ledgers.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/account_ledgers/{account_ledger}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_ledgers.show',
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@show',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_ledgers.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/account_ledgers/{account_ledger}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_ledgers.update',
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@update',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_ledgers.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/account_ledgers/{account_ledger}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_ledgers.destroy',
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@destroy',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::9yfSzd4EenP3NLQt' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/ledger_balance/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@ledger_balance',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@ledger_balance',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::9yfSzd4EenP3NLQt',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::WPvr9Y5bhgkAdwar' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/purchase_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@purchase_ledgers',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@purchase_ledgers',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::WPvr9Y5bhgkAdwar',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::HqIZ7q401hGXcouB' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/sale_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@sale_ledgers',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@sale_ledgers',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::HqIZ7q401hGXcouB',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::BVc7N4bkCUpFkYXa' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/supplier_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@supplier_ledgers',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@supplier_ledgers',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::BVc7N4bkCUpFkYXa',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::XfQvTEOeHJT9CNyx' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/distributor_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@distributor_ledgers',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@distributor_ledgers',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::XfQvTEOeHJT9CNyx',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::vNMIrOe4LyA4ZHYU' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/stock_in_hand_ledgers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'uses' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@stock_in_hand_ledgers',
+        'controller' => 'App\\Modules\\Aipt\\AccountLedger\\Controllers\\Api\\AccountLedgerController@stock_in_hand_ledgers',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::vNMIrOe4LyA4ZHYU',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_natures.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/account_natures',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_natures.index',
+        'uses' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@index',
+        'controller' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_natures.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/account_natures',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_natures.store',
+        'uses' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@store',
+        'controller' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_natures.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/account_natures/{account_nature}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_natures.show',
+        'uses' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@show',
+        'controller' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_natures.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/account_natures/{account_nature}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_natures.update',
+        'uses' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@update',
+        'controller' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'account_natures.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/account_natures/{account_nature}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'account_natures.destroy',
+        'uses' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@destroy',
+        'controller' => 'App\\Modules\\Aipt\\AccountNature\\Controllers\\Api\\AccountNatureController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'academic_classes.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/academic_classes',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'academic_classes.index',
+        'uses' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@index',
+        'controller' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'academic_classes.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/academic_classes',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'academic_classes.store',
+        'uses' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@store',
+        'controller' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'academic_classes.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/academic_classes/{academic_class}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'academic_classes.show',
+        'uses' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@show',
+        'controller' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'academic_classes.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/academic_classes/{academic_class}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'academic_classes.update',
+        'uses' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@update',
+        'controller' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'academic_classes.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/academic_classes/{academic_class}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'academic_classes.destroy',
+        'uses' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@destroy',
+        'controller' => 'App\\Modules\\School\\AcademicClass\\Controllers\\Api\\AcademicClassController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'academic_sessions.index' => 
     array (
       'methods' => 
@@ -7321,6 +11406,2262 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'admissions.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/admissions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'admissions.index',
+        'uses' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@index',
+        'controller' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admissions.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/admissions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'admissions.store',
+        'uses' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@store',
+        'controller' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admissions.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/admissions/{admission}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'admissions.show',
+        'uses' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@show',
+        'controller' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admissions.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/admissions/{admission}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'admissions.update',
+        'uses' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@update',
+        'controller' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admissions.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/admissions/{admission}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'admissions.destroy',
+        'uses' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@destroy',
+        'controller' => 'App\\Modules\\School\\Admission\\Controllers\\Api\\AdmissionController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'buildings.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/buildings',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'buildings.index',
+        'uses' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@index',
+        'controller' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'buildings.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/buildings',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'buildings.store',
+        'uses' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@store',
+        'controller' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'buildings.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/buildings/{building}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'buildings.show',
+        'uses' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@show',
+        'controller' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'buildings.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/buildings/{building}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'buildings.update',
+        'uses' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@update',
+        'controller' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'buildings.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/buildings/{building}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'buildings.destroy',
+        'uses' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@destroy',
+        'controller' => 'App\\Modules\\School\\Building\\Controllers\\Api\\BuildingController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'campuses.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/campuses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'campuses.index',
+        'uses' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@index',
+        'controller' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'campuses.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/campuses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'campuses.store',
+        'uses' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@store',
+        'controller' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'campuses.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/campuses/{campus}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'campuses.show',
+        'uses' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@show',
+        'controller' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'campuses.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/campuses/{campus}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'campuses.update',
+        'uses' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@update',
+        'controller' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'campuses.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/campuses/{campus}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'campuses.destroy',
+        'uses' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@destroy',
+        'controller' => 'App\\Modules\\School\\Campus\\Controllers\\Api\\CampusController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'education_boards.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/education_boards',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'education_boards.index',
+        'uses' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@index',
+        'controller' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'education_boards.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/education_boards',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'education_boards.store',
+        'uses' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@store',
+        'controller' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'education_boards.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/education_boards/{education_board}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'education_boards.show',
+        'uses' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@show',
+        'controller' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'education_boards.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/education_boards/{education_board}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'education_boards.update',
+        'uses' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@update',
+        'controller' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'education_boards.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/education_boards/{education_board}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'education_boards.destroy',
+        'uses' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@destroy',
+        'controller' => 'App\\Modules\\School\\EducationBoard\\Controllers\\Api\\EducationBoardController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examinations.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examinations',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examinations.index',
+        'uses' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@index',
+        'controller' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examinations.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/examinations',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examinations.store',
+        'uses' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@store',
+        'controller' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examinations.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examinations/{examination}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examinations.show',
+        'uses' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@show',
+        'controller' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examinations.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/examinations/{examination}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examinations.update',
+        'uses' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@update',
+        'controller' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examinations.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/examinations/{examination}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examinations.destroy',
+        'uses' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@destroy',
+        'controller' => 'App\\Modules\\School\\Examination\\Controllers\\Api\\ExaminationController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_results.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_results',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_results.index',
+        'uses' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@index',
+        'controller' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_results.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/examination_results',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_results.store',
+        'uses' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@store',
+        'controller' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_results.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_results/{examination_result}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_results.show',
+        'uses' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@show',
+        'controller' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_results.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/examination_results/{examination_result}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_results.update',
+        'uses' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@update',
+        'controller' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_results.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/examination_results/{examination_result}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_results.destroy',
+        'uses' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@destroy',
+        'controller' => 'App\\Modules\\School\\ExaminationResult\\Controllers\\Api\\ExaminationResultController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_schedules.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_schedules',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_schedules.index',
+        'uses' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@index',
+        'controller' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_schedules.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/examination_schedules',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_schedules.store',
+        'uses' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@store',
+        'controller' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_schedules.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_schedules/{examination_schedule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_schedules.show',
+        'uses' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@show',
+        'controller' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_schedules.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/examination_schedules/{examination_schedule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_schedules.update',
+        'uses' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@update',
+        'controller' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_schedules.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/examination_schedules/{examination_schedule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_schedules.destroy',
+        'uses' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@destroy',
+        'controller' => 'App\\Modules\\School\\ExaminationSchedule\\Controllers\\Api\\ExaminationScheduleController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_standards.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_standards',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_standards.index',
+        'uses' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@index',
+        'controller' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_standards.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/examination_standards',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_standards.store',
+        'uses' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@store',
+        'controller' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_standards.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_standards/{examination_standard}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_standards.show',
+        'uses' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@show',
+        'controller' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_standards.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/examination_standards/{examination_standard}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_standards.update',
+        'uses' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@update',
+        'controller' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_standards.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/examination_standards/{examination_standard}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_standards.destroy',
+        'uses' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@destroy',
+        'controller' => 'App\\Modules\\School\\ExaminationStandard\\Controllers\\Api\\ExaminationStandardController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_types.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_types',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_types.index',
+        'uses' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@index',
+        'controller' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_types.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/examination_types',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_types.store',
+        'uses' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@store',
+        'controller' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_types.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/examination_types/{examination_type}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_types.show',
+        'uses' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@show',
+        'controller' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_types.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/examination_types/{examination_type}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_types.update',
+        'uses' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@update',
+        'controller' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'examination_types.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/examination_types/{examination_type}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'examination_types.destroy',
+        'uses' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@destroy',
+        'controller' => 'App\\Modules\\School\\ExaminationType\\Controllers\\Api\\ExaminationTypeController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expenses.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/expenses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expenses.index',
+        'uses' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@index',
+        'controller' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expenses.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/expenses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expenses.store',
+        'uses' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@store',
+        'controller' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expenses.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/expenses/{expense}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expenses.show',
+        'uses' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@show',
+        'controller' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expenses.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/expenses/{expense}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expenses.update',
+        'uses' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@update',
+        'controller' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expenses.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/expenses/{expense}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expenses.destroy',
+        'uses' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@destroy',
+        'controller' => 'App\\Modules\\School\\Expense\\Controllers\\Api\\ExpenseController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_groups.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/expense_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_groups.index',
+        'uses' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@index',
+        'controller' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_groups.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/expense_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_groups.store',
+        'uses' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@store',
+        'controller' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_groups.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/expense_groups/{expense_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_groups.show',
+        'uses' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@show',
+        'controller' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_groups.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/expense_groups/{expense_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_groups.update',
+        'uses' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@update',
+        'controller' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_groups.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/expense_groups/{expense_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_groups.destroy',
+        'uses' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@destroy',
+        'controller' => 'App\\Modules\\School\\ExpenseGroup\\Controllers\\Api\\ExpenseGroupController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_heads.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/expense_heads',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_heads.index',
+        'uses' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@index',
+        'controller' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_heads.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/expense_heads',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_heads.store',
+        'uses' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@store',
+        'controller' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_heads.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/expense_heads/{expense_head}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_heads.show',
+        'uses' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@show',
+        'controller' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_heads.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/expense_heads/{expense_head}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_heads.update',
+        'uses' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@update',
+        'controller' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'expense_heads.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/expense_heads/{expense_head}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'expense_heads.destroy',
+        'uses' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@destroy',
+        'controller' => 'App\\Modules\\School\\ExpenseHead\\Controllers\\Api\\ExpenseHeadController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'fees.index' => 
     array (
       'methods' => 
@@ -7489,6 +13830,1510 @@ app('router')->setCompiledRoutes(
         'as' => 'fees.destroy',
         'uses' => 'App\\Modules\\School\\Fee\\Controllers\\Api\\FeeController@destroy',
         'controller' => 'App\\Modules\\School\\Fee\\Controllers\\Api\\FeeController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_heads.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_heads',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_heads.index',
+        'uses' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@index',
+        'controller' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_heads.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/fee_heads',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_heads.store',
+        'uses' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@store',
+        'controller' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_heads.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_heads/{fee_head}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_heads.show',
+        'uses' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@show',
+        'controller' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_heads.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/fee_heads/{fee_head}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_heads.update',
+        'uses' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@update',
+        'controller' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_heads.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/fee_heads/{fee_head}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_heads.destroy',
+        'uses' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@destroy',
+        'controller' => 'App\\Modules\\School\\FeeHead\\Controllers\\Api\\FeeHeadController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_items.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_items',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_items.index',
+        'uses' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@index',
+        'controller' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_items.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/fee_items',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_items.store',
+        'uses' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@store',
+        'controller' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_items.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_items/{fee_item}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_items.show',
+        'uses' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@show',
+        'controller' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_items.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/fee_items/{fee_item}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_items.update',
+        'uses' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@update',
+        'controller' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_items.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/fee_items/{fee_item}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_items.destroy',
+        'uses' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@destroy',
+        'controller' => 'App\\Modules\\School\\FeeItem\\Controllers\\Api\\FeeItemController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_item_months.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_item_months',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_item_months.index',
+        'uses' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@index',
+        'controller' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_item_months.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/fee_item_months',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_item_months.store',
+        'uses' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@store',
+        'controller' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_item_months.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_item_months/{fee_item_month}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_item_months.show',
+        'uses' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@show',
+        'controller' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_item_months.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/fee_item_months/{fee_item_month}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_item_months.update',
+        'uses' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@update',
+        'controller' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_item_months.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/fee_item_months/{fee_item_month}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_item_months.destroy',
+        'uses' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@destroy',
+        'controller' => 'App\\Modules\\School\\FeeItemMonth\\Controllers\\Api\\FeeItemMonthController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_rules.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_rules',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_rules.index',
+        'uses' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@index',
+        'controller' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_rules.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/fee_rules',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_rules.store',
+        'uses' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@store',
+        'controller' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_rules.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_rules/{fee_rule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_rules.show',
+        'uses' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@show',
+        'controller' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_rules.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/fee_rules/{fee_rule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_rules.update',
+        'uses' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@update',
+        'controller' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_rules.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/fee_rules/{fee_rule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_rules.destroy',
+        'uses' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@destroy',
+        'controller' => 'App\\Modules\\School\\FeeRule\\Controllers\\Api\\FeeRuleController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_templates.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_templates',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_templates.index',
+        'uses' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@index',
+        'controller' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_templates.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/fee_templates',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_templates.store',
+        'uses' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@store',
+        'controller' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_templates.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/fee_templates/{fee_template}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_templates.show',
+        'uses' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@show',
+        'controller' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_templates.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/fee_templates/{fee_template}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_templates.update',
+        'uses' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@update',
+        'controller' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'fee_templates.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/fee_templates/{fee_template}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'fee_templates.destroy',
+        'uses' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@destroy',
+        'controller' => 'App\\Modules\\School\\FeeTemplate\\Controllers\\Api\\FeeTemplateController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'floors.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/floors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'floors.index',
+        'uses' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@index',
+        'controller' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'floors.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/floors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'floors.store',
+        'uses' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@store',
+        'controller' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'floors.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/floors/{floor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'floors.show',
+        'uses' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@show',
+        'controller' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'floors.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/floors/{floor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'floors.update',
+        'uses' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@update',
+        'controller' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'floors.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/floors/{floor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'floors.destroy',
+        'uses' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@destroy',
+        'controller' => 'App\\Modules\\School\\Floor\\Controllers\\Api\\FloorController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'guardians.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/guardians',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'guardians.index',
+        'uses' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@index',
+        'controller' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'guardians.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/guardians',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'guardians.store',
+        'uses' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@store',
+        'controller' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'guardians.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/guardians/{guardian}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'guardians.show',
+        'uses' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@show',
+        'controller' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'guardians.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/guardians/{guardian}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'guardians.update',
+        'uses' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@update',
+        'controller' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'guardians.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/guardians/{guardian}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'guardians.destroy',
+        'uses' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@destroy',
+        'controller' => 'App\\Modules\\School\\Guardian\\Controllers\\Api\\GuardianController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'income_groups.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/income_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'income_groups.index',
+        'uses' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@index',
+        'controller' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'income_groups.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/income_groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'income_groups.store',
+        'uses' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@store',
+        'controller' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'income_groups.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/income_groups/{income_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'income_groups.show',
+        'uses' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@show',
+        'controller' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'income_groups.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/income_groups/{income_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'income_groups.update',
+        'uses' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@update',
+        'controller' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'income_groups.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/income_groups/{income_group}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'jwt.cookies',
+        ),
+        'as' => 'income_groups.destroy',
+        'uses' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@destroy',
+        'controller' => 'App\\Modules\\School\\IncomeGroup\\Controllers\\Api\\IncomeGroupController@destroy',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
@@ -7885,7 +15730,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LcMOfLxKo56qH2W1' => 
+    'generated::1FRZKPi1n70yUxlr' => 
     array (
       'methods' => 
       array (
@@ -7906,13 +15751,13 @@ app('router')->setCompiledRoutes(
     \\Illuminate\\Support\\Facades\\Artisan::call(\'route:cache\');
     \\Illuminate\\Support\\Facades\\Artisan::call(\'view:clear\');
 
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009df0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000be30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::LcMOfLxKo56qH2W1',
+        'as' => 'generated::1FRZKPi1n70yUxlr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -7928,7 +15773,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::HStPm67pNb956uzQ' => 
+    'generated::F03BMlOPHjSK2qMN' => 
     array (
       'methods' => 
       array (
@@ -7943,13 +15788,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:88:"function () {
     \\Illuminate\\Support\\Facades\\Artisan::call(\'migrate:refresh --seed\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009d80000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000bdc0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::HStPm67pNb956uzQ',
+        'as' => 'generated::F03BMlOPHjSK2qMN',
       ),
       'fallback' => false,
       'defaults' => 
@@ -7965,7 +15810,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::VZxXH0ZzbAyjQA5R' => 
+    'generated::kgn5bAR7FVpmV5gF' => 
     array (
       'methods' => 
       array (
@@ -7987,7 +15832,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::VZxXH0ZzbAyjQA5R',
+        'as' => 'generated::kgn5bAR7FVpmV5gF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8003,7 +15848,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2E4oSgG887wscU93' => 
+    'generated::9nbTI5egjXgAmPSb' => 
     array (
       'methods' => 
       array (
@@ -8025,7 +15870,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2E4oSgG887wscU93',
+        'as' => 'generated::9nbTI5egjXgAmPSb',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8041,7 +15886,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::qLzHbXZ9P8FHYk0I' => 
+    'generated::7u6j89cZ7882blVj' => 
     array (
       'methods' => 
       array (
@@ -8058,13 +15903,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:96:"function () {
         return \\response()->json([\'cookie\' => \\request()->cookie(\'token\')]);
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009e50000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000be90000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::qLzHbXZ9P8FHYk0I',
+        'as' => 'generated::7u6j89cZ7882blVj',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8080,7 +15925,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::fd3KCK7UuBN04AST' => 
+    'generated::tn4r9LLlZ9tkfSpz' => 
     array (
       'methods' => 
       array (
@@ -8108,8 +15953,8 @@ app('router')->setCompiledRoutes(
                     return response(\\Illuminate\\Support\\Facades\\View::file(\'D:\\\\Project\\\\school-erp\\\\SchoolOS\\\\backend-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000009e30000000000000000";}}',
-        'as' => 'generated::fd3KCK7UuBN04AST',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"0000000000000be70000000000000000";}}',
+        'as' => 'generated::tn4r9LLlZ9tkfSpz',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8125,7 +15970,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LHMDMcNSUMwYRLw2' => 
+    'generated::IZbF8IZp7wv0iDil' => 
     array (
       'methods' => 
       array (
@@ -8141,13 +15986,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009e70000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000beb0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::LHMDMcNSUMwYRLw2',
+        'as' => 'generated::IZbF8IZp7wv0iDil',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8179,7 +16024,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:56:"function () {
     return \\view(\'Maintenance::backup\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009e90000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000bed0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8225,7 +16070,7 @@ app('router')->setCompiledRoutes(
     } catch (\\Exception $e) {
         return \\redirect()->route(\'maintenance.backup.form\')->with(\'error\', $e->getMessage());
     }
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009eb0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000bef0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8263,7 +16108,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:57:"function () {
     return \\view(\'Maintenance::restore\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009ee0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000bf20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8319,7 +16164,7 @@ app('router')->setCompiledRoutes(
     } catch (\\Exception $e) {
         return \\redirect()->route(\'maintenance.restore.form\')->with(\'error\', $e->getMessage());
     }
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009f00000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000bf40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8357,7 +16202,7 @@ app('router')->setCompiledRoutes(
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000009f20000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000bf60000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,
@@ -8390,7 +16235,7 @@ app('router')->setCompiledRoutes(
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000009f40000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000bf80000000000000000";}}',
         'as' => 'storage.local.upload',
       ),
       'fallback' => false,
