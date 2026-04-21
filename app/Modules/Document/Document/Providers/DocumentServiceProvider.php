@@ -11,10 +11,8 @@ class DocumentServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->bind(DocumentServiceInterface::class, DocumentService::class);
-        $this->app->singleton('documents', function ($app) {
-            return $app->make(DocumentServiceInterface::class);
-        });
+        $this->app->singleton(DocumentServiceInterface::class, DocumentService::class);
+
     }
 
     public function boot(): void

@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Enums;
 
 enum DocumentPrivacyLevel: string
 {

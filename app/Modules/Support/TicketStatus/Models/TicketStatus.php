@@ -35,7 +35,7 @@ class TicketStatus extends Model
 
     /**
      * @param Builder $query
-     * @param String $role
+     * @param string $role
      * @return Builder
      */
 

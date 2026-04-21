@@ -23,7 +23,7 @@ switch (env('APP_MODULE')) {
         $providers[] = AiptModuleServiceLoader::class;
         break;
     case 'School':
-         $providers[] = AiptModuleServiceLoader::class;
+        $providers[] = AiptModuleServiceLoader::class;
         $providers[] = SchoolModuleServiceLoader::class;
         break;
     case 'Hospital':

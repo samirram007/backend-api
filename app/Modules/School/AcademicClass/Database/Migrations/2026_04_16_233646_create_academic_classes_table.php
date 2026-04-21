@@ -11,9 +11,9 @@ return new class extends Migration {
             $table->id();
             $table->string('name')->require();
             $table->string('code')->nullable();
-            $table->foreignId(column: 'campus_id')->constrained(table: 'campuses');
-            $table->foreignId(column: 'academic_standard_id')->constrained(table: 'academic_standards');
-            $table->foreignId(column: 'section_id')->constrained(table: 'sections');
+            $table->foreignId(column: 'campus_id');
+            $table->foreignId(column: 'academic_standard_id');
+            $table->foreignId(column: 'section_id');
             $table->integer('capacity')->default(50);
 
             $table->timestamps();
