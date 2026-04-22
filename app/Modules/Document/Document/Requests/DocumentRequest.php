@@ -3,6 +3,7 @@
 namespace App\Modules\Document\Document\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Log;
 
 class DocumentRequest extends FormRequest
 {
@@ -13,17 +14,18 @@ class DocumentRequest extends FormRequest
 
     public function rules(): array
     {
-        $rules = [
-            'files' => 'required|array',
-            'files.*' => 'file|max:10240|mimes:jpeg,png,avif,gif,pdf,doc,docx,xls,xlsx,ppt,pptx,txt',
+
+        return [
+            'files.*' => 'required|file|mimes:jpg,jpeg,png,webp,pdf|max:2048',
+            // 'file' => 'required|file', // Ensure it's a file
+            // Add other validation rules for additional fields if needed
         ];
-
-        // For update requests, make validation more flexible
-        if ($this->isMethod('PUT') || $this->isMethod('PATCH')) {
-
-        }
-
-        return $rules;
+    }
+    public function validatedWithFiles()
+    {
+        return array_merge(parent::validated(), [
+            'file' => $this->file('file'), // Include the file in validated data
+        ]);
     }
 
     public function messages(): array

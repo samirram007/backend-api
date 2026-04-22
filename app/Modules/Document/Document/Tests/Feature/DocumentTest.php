@@ -1,98 +1,207 @@
 <?php
 
-namespace App\Modules\Document\Document\Tests\Feature;
 
+
+namespace Tests\Feature;
 use Tests\TestCase;
+use App\Models\User;
+use App\Models\Document; // Assuming this model exists
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Modules\Document\Document\Models\Document;
 
-class DocumentTest extends TestCase
+
+
+class DocumentServiceTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_can_list_documents(): void
+
+    /**
+     * Setup the test environment with necessary users and initial data.
+     */
+    protected function setUp(): void
     {
-        $response = $this->getJson('/api/documents');
-        $response->assertStatus(200)
-            ->assertJsonStructure([
-                'data',
-                'status',
-                'code',
-                'message'
-            ]);
+
+
+
+
+
+
+
+
+
+
+
+        parent::setUp();
+        // Create a standard user that can perform actions
+        $this->user = User::factory()->create();
     }
 
-    public function test_can_create_Document(): void
+    /**
+     * Test Case 1: Successful creation of a new document.
+     * @test
+     */
+    public function test_document_can_be_created_successfully()
     {
-        $data = ['name' => 'Test Document'];
 
-        $response = $this->postJson('/api/documents', $data);
-        $response->assertStatus(201)
-            ->assertJsonStructure([
-                'data',
-                'status',
-                'code',
-                'message'
-            ]);
 
-        $this->assertDatabaseHas('documents', $data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $payload = [
+            'title' => 'Quarterly Report Q3',
+            'content' => 'Detailed metrics for Q3.',
+            'user_id' => $this->user->id,
+        ];
+
+        // Assuming the service layer handles the actual creation logic
+        $document = \App\Services\DocumentService::createDocument($payload);
+
+        $this->assertInstanceOf(Document::class, $document);
+        $this->assertEquals($payload['title'], $document->title);
+        $this->assertEquals($payload['user_id'], $document->user_id);
     }
 
-    public function test_can_show_Document(): void
+    /**
+     * Test Case 2: Attempting to create a document with missing required fields.
+     * @test
+     */
+    public function test_document_creation_fails_with_missing_data()
     {
-        $Document = Document::factory()->create();
 
-        $response = $this->getJson('/api/documents/' . $Document->id);
-        $response->assertStatus(200)
-            ->assertJsonStructure([
-                'data' => [
-                    'id',
-                    'name',
-                    'created_at',
-                    'updated_at'
-                ],
-                'status',
-                'code',
-                'message'
-            ]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Title and content are required');
+
+        // Test failure case
+        \App\Services\DocumentService::createDocument([
+            'title' => '', // Missing
+            'content' => 'Some content',
+            'user_id' => $this->user->id,
+        ]);
     }
 
-    public function test_can_update_Document(): void
+
+    /**
+     * Test Case 3: Retrieving a document by ID.
+     * @test
+     */
+    public function test_document_can_be_retrieved_by_id()
     {
-        $Document = Document::factory()->create();
-        $data = ['name' => 'Updated Document'];
 
-        $response = $this->putJson('/api/documents/' . $Document->id, $data);
-        $response->assertStatus(200)
-            ->assertJsonStructure([
-                'data',
-                'status',
-                'code',
-                'message'
-            ]);
 
-        $this->assertDatabaseHas('documents', $data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $document = Document::factory()->create(['user_id' => $this->user->id]);
+
+        // Assuming retrieval method exists
+        $retrievedDocument = \App\Services\DocumentService::getDocumentById($document->id);
+
+        $this->assertInstanceOf(Document::class, $retrievedDocument);
+        $this->assertEquals($document->id, $retrievedDocument->id);
     }
 
-    public function test_can_delete_Document(): void
+    /**
+     * Test Case 4: Updating an existing document's content.
+     * @test
+     */
+    public function test_document_can_be_updated()
     {
-        $Document = Document::factory()->create();
 
-        $response = $this->deleteJson('/api/documents/' . $Document->id);
-        $response->assertStatus(200)
-            ->assertJsonStructure([
-                'status',
-                'code',
-                'message'
-            ]);
+        $document = Document::factory()->create(['user_id' => $this->user->id]);
+        $newContent = 'Updated content for Q4 analysis.';
 
-        $this->assertDatabaseMissing('documents', ['id' => $Document->id]);
+
+
+
+
+
+
+
+
+
+
+
+
+        // Assuming the service uses the authenticated user's context for updates
+        $updatedDocument = \App\Services\DocumentService::updateDocument($document->id, [
+            'content' => $newContent
+        ], $this->user);
+
+        $this->assertInstanceOf(Document::class, $updatedDocument);
+        $this->assertEquals($newContent, $updatedDocument->content);
     }
 
-    public function test_validation_errors_on_create(): void
+    /**
+     * Test Case 5: Authorization check - user cannot update another user's document.
+     * @test
+     */
+    public function test_unauthorized_user_cannot_update_document()
     {
-        $response = $this->postJson('/api/documents', []);
-        $response->assertStatus(422)
-            ->assertJsonValidationErrors(['name']);
+
+
+
+        // Setup: Document owned by user A
+        $owner = User::factory()->create();
+        $document = Document::factory()->create(['user_id' => $owner->id]);
+
+        // Setup: Attacker user B (the authenticated user for this test)
+        $attacker = $this->user;
+
+        // Expecting an authorization exception
+        $this->expectException(\Illuminate\Auth\Access\AuthorizationException::class);
+
+        // Attempt update using the service but with wrong ownership context
+        \App\Services\DocumentService::updateDocument($document->id, [
+            'content' => 'Hacked content'
+        ], $attacker);
+    }
+
+    /**
+     * Test Case 6: Deleting a document that belongs to the user.
+     * @test
+     */
+    public function test_document_can_be_deleted()
+    {
+        $document = Document::factory()->create(['user_id' => $this->user->id]);
+
+        // Assuming the service handles deletion logic
+        \App\Services\DocumentService::deleteDocument($document->id, $this->user);
+
+        $this->assertDatabaseMissing('documents', ['id' => $document->id]);
     }
 }

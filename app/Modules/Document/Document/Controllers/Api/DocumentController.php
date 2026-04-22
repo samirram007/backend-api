@@ -10,6 +10,7 @@ use App\Modules\Document\Document\Resources\DocumentResource;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 class DocumentController extends Controller
@@ -37,6 +38,9 @@ class DocumentController extends Controller
 
     public function store(DocumentRequest $request): JsonResponse
     {
+        Log::info('DocumentController@store called with data:', [
+            'files' => $request->file('files')
+        ]);
         $documents = DocumentFacade::store($request->validated());
 
         return response()->json([

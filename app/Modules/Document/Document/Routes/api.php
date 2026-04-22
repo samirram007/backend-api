@@ -13,7 +13,7 @@ Route::middleware(['jwt.cookies'])->prefix('documents')->group(function () {
 
     Route::get('/', [DocumentController::class, 'index']);        // list
     Route::post('/', [DocumentController::class, 'store']);       // upload
-    Route::get('/{id}', [DocumentController::class, 'show']);     // single
+    Route::get('/{id}', [DocumentController::class, 'show'])->whereNumber('id');     // single
     Route::put('/{id}', [DocumentController::class, 'update']);   // update
     Route::delete('/{id}', [DocumentController::class, 'destroy']);// delete
 
@@ -34,8 +34,8 @@ Route::middleware(['jwt.cookies'])->prefix('documents')->group(function () {
     */
 
     Route::get('/root', [DocumentController::class, 'root']);              // root folders
-    Route::get('/{id}/children', [DocumentController::class, 'children']); // folder contents
-    Route::get('/{id}/path', [DocumentController::class, 'path']);         // breadcrumb
+    Route::get('/{id}/children', [DocumentController::class, 'children'])->whereNumber('id'); // folder contents
+    Route::get('/{id}/path', [DocumentController::class, 'path'])->whereNumber('id');         // breadcrumb
 
     /*
     |--------------------------------------------------------------------------
@@ -44,8 +44,8 @@ Route::middleware(['jwt.cookies'])->prefix('documents')->group(function () {
     */
 
     Route::post('/folder', [DocumentController::class, 'createFolder']);
-    Route::patch('/{id}/move', [DocumentController::class, 'move']);
-    Route::patch('/{id}/rename', [DocumentController::class, 'rename']);
+    Route::patch('/{id}/move', [DocumentController::class, 'move'])->whereNumber('id');
+    Route::put('/{id}/rename', [DocumentController::class, 'rename'])->whereNumber('id');
 
     /*
     |--------------------------------------------------------------------------
