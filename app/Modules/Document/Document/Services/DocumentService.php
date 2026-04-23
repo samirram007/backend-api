@@ -63,7 +63,7 @@ class DocumentService implements DocumentServiceInterface
         }
 
         $files = $data['files'] ?? [];
-        $parentId = $data['parent_id'] ?? null;
+        $parentId = $data['parent_id'] == "" ? null : $data['parent_id'];
 
         return DB::transaction(function () use ($files, $userId, $parentId) {
 

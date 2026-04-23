@@ -17,6 +17,7 @@ class DocumentRequest extends FormRequest
 
         return [
             'files.*' => 'required|file|mimes:jpg,jpeg,png,webp,pdf|max:8192',
+            'parent_id' => 'sometimes|nullable|exists:documents,id',
             // 'file' => 'required|file', // Ensure it's a file
             // Add other validation rules for additional fields if needed
         ];
