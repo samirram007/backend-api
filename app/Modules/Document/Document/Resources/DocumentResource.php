@@ -14,7 +14,7 @@ class DocumentResource extends SuccessResource
             'name' => $this->name,
             'userId' => $this->user_id,
             'documentType' => $this->document_type,
-            'path' => env('APP_URL') . '/storage/' . $this->path,
+            'path' => $this->document_type == 'folder' ? $this->path : env('APP_URL') . '/storage/' . $this->path,
             'mimeType' => $this->mime_type,
             'size' => $this->size,
             'originalName' => $this->original_name,

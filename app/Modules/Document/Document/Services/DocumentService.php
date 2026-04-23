@@ -198,12 +198,14 @@ class DocumentService implements DocumentServiceInterface
     {
         return Document::where('user_id', Auth::id())
             ->whereNull('parent_id')
+            ->orderByRaw("document_type = 'folder' DESC, original_name ASC, updated_at DESC")
             ->get();
     }
     public function getChildren(int $parentId): Collection
     {
         return Document::where('user_id', Auth::id())
             ->where('parent_id', $parentId)
+            ->orderByRaw("document_type = 'folder' DESC, original_name ASC, updated_at DESC")
             ->get();
     }
     public function getTree(int $rootId = null): Collection
@@ -243,7 +245,8 @@ class DocumentService implements DocumentServiceInterface
         return Document::create([
             'user_id' => Auth::id(),
             'parent_id' => $data['parent_id'] ?? null,
-            'name' => $data['name'],
+            'original_name' => $data['name'],
+            'name' => Str::slug($data['name']) . '-' . Str::random(6),
             'document_type' => 'folder',
         ]);
     }
@@ -266,7 +269,7 @@ class DocumentService implements DocumentServiceInterface
     public function rename(int $id, string $name): bool
     {
         $document = Document::findOrFail($id);
-        return $document->update(['name' => $name]);
+        return $document->update(['original_name' => $name]);
     }
 
     /*

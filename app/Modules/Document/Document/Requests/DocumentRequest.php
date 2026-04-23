@@ -16,7 +16,7 @@ class DocumentRequest extends FormRequest
     {
 
         return [
-            'files.*' => 'required|file|mimes:jpg,jpeg,png,webp,pdf|max:2048',
+            'files.*' => 'required|file|mimes:jpg,jpeg,png,webp,pdf|max:8192',
             // 'file' => 'required|file', // Ensure it's a file
             // Add other validation rules for additional fields if needed
         ];
@@ -34,7 +34,7 @@ class DocumentRequest extends FormRequest
             'files.required' => 'Please upload at least one file.',
             'files.array' => 'The files must be an array.',
             'files.*.file' => 'Each item must be a valid file.',
-            'files.*.max' => 'Each file must not exceed 10MB in size.',
+            'files.*.max' => 'Each file must not exceed 4MB in size.',
             'files.*.mimes' => 'Allowed file types are: jpeg, png, avif, gif, pdf, doc, docx, xls, xlsx, ppt, pptx, txt.',
         ];
 

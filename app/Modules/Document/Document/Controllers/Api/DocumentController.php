@@ -3,7 +3,10 @@
 namespace App\Modules\Document\Document\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SuccessCollection;
+use App\Http\Resources\SuccessResource;
 use App\Modules\Document\Document\Facades\DocumentFacade;
+use App\Modules\Document\Document\Requests\CreateFolderRequest;
 use App\Modules\Document\Document\Requests\DocumentRequest;
 use App\Modules\Document\Document\Resources\DocumentCollection;
 use App\Modules\Document\Document\Resources\DocumentResource;
@@ -38,13 +41,14 @@ class DocumentController extends Controller
 
     public function store(DocumentRequest $request): JsonResponse
     {
-        Log::info('DocumentController@store called with data:', [
-            'files' => $request->file('files')
-        ]);
+
+
+
         $documents = DocumentFacade::store($request->validated());
 
         return response()->json([
             'status' => true,
+            'success' => true,
             'message' => 'Document(s) uploaded successfully',
             'data' => DocumentResource::collection($documents),
         ], Response::HTTP_CREATED);
@@ -152,22 +156,18 @@ class DocumentController extends Controller
         ]);
     }
 
-    public function children(int $id): JsonResponse
+    public function children(int $id): SuccessCollection
     {
-        return response()->json([
-            'data' => DocumentResource::collection(
-                DocumentFacade::getChildren($id)
-            ),
-        ]);
+        return new DocumentCollection(
+            DocumentFacade::getChildren($id)
+        );
     }
 
-    public function path(int $id): JsonResponse
+    public function path(int $id): SuccessCollection
     {
-        return response()->json([
-            'data' => DocumentResource::collection(
-                DocumentFacade::getPath($id)
-            ),
-        ]);
+        return new DocumentCollection(
+            DocumentFacade::getPath($id)
+        );
     }
 
     /*
@@ -176,15 +176,11 @@ class DocumentController extends Controller
     |--------------------------------------------------------------------------
     */
 
-    public function createFolder(Request $request): JsonResponse
+    public function createFolder(CreateFolderRequest $request): SuccessResource
     {
         $folder = DocumentFacade::createFolder($request->all());
 
-        return response()->json([
-            'status' => true,
-            'message' => 'Folder created successfully',
-            'data' => new DocumentResource($folder),
-        ], Response::HTTP_CREATED);
+        return new DocumentResource($folder);
     }
 
     public function move(Request $request, int $id): JsonResponse
