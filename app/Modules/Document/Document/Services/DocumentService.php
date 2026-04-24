@@ -453,4 +453,18 @@ class DocumentService implements DocumentServiceInterface
         $document = Document::find($id);
         return $document && $document->user_id === $userId;
     }
+
+
+
+    /*
+
+    |--------------------------------------------------------------------------
+    | Folder Path Generation (for breadcrumbs)
+    |--------------------------------------------------------------------------    
+    */
+    private function generateFolderPath(Document $document): string
+    {
+        $path = [];
+        
+    }
 }
