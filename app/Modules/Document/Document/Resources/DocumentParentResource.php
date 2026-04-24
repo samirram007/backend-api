@@ -5,6 +5,7 @@ namespace App\Modules\Document\Document\Resources;
 use Illuminate\Http\Request;
 
 use App\Http\Resources\SuccessResource;
+
 class DocumentParentResource extends SuccessResource
 {
     public function toArray(Request $request): array
@@ -14,6 +15,7 @@ class DocumentParentResource extends SuccessResource
             'parentId' => $this['parent_id'],
             'name' => $this['name'],
             'originalName' => $this['original_name'],
+            'depth' => $this['depth'],
         ];
     }
 }
