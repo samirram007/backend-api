@@ -28,7 +28,8 @@ class DocumentResource extends SuccessResource
             'isRoot' => $this->is_root,
             'documents' => $this->document_type === 'folder' ? new DocumentCollection($this->whenLoaded('documents')) : null,
             'folders' => $this->document_type !== 'folder' ? new DocumentCollection($this->whenLoaded('folders')) : null,
-
+            'fullPath' => $this->full_path,
+            'parents' => DocumentParentResource::collection($this->parents),
         ];
     }
 }
