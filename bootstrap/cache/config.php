@@ -817,7 +817,7 @@
   'session' => 
   array (
     'driver' => 'cookie',
-    'lifetime' => 1440,
+    'lifetime' => 144000,
     'expire_on_close' => false,
     'encrypt' => false,
     'files' => 'D:\\Project\\school-erp\\SchoolOS\\backend-api\\storage\\framework/sessions',

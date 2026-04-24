@@ -44,7 +44,7 @@ Route::middleware(['jwt.cookies'])->prefix('documents')->group(function () {
     */
 
     Route::post('/folder', [DocumentController::class, 'createFolder']);
-    Route::patch('/{id}/move', [DocumentController::class, 'move'])->whereNumber('id');
+    Route::put('/{id}/move', [DocumentController::class, 'move'])->whereNumber('id');
     Route::put('/{id}/rename', [DocumentController::class, 'rename'])->whereNumber('id');
 
     /*
